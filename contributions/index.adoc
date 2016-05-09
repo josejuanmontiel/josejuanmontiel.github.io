@@ -1,0 +1,15 @@
+= Contributions
+
+== Apache Commons
+* https://commons.apache.org/proper/commons-net/changes-report.html#a2.1[FTPS (TLS and SSL) is now supported. Thanks to Jose Juan Montiel, Paul Ferraro, and Satoshi Ishigami.]
+
+== Apache Commons VFS
+* https://svn.apache.org/repos/asf/commons/proper/vfs/trunk/RELEASE-NOTES.txt[VFS-412:  \[FTPS\] Add support for command to set the DataChannelProtectionLevel. Thanks to Jose Juan Montiel.]
+** https://issues.apache.org/jira/browse/VFS-412[\[FTPS\] Support to send execPROT("P")]
+* https://issues.apache.org/jira/browse/VFS-180[Support HTTPS / SSL for Webdav]
+
+== Thymeleaf Docs
+* https://github.com/thymeleaf/thymeleaf-docs/pull/27[The last use of .build() to render the uri...]
+
+== JCR Spring Extension
+* https://github.com/jbellmann/jcr-springextension/pull/3[Upgrade to spring 4.0]
