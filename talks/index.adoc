@@ -1,0 +1,18 @@
+= TALKS
+
+== DONE
+
+===  Dropwizard: de Java a Android... pasando por Groovy
+
+Resources
+
+* http://www.meetup.com/es-ES/madrid-gug/events/188033422/[Meetup]
+* https://www.youtube.com/watch?v=P-M7nAxllU8[Video]
+* https://slides.com/josejuanmontiel/deck[slides]
+* https://github.com/josejuanmontiel/whatshappening[Github Code]
+* https://play.google.com/store/apps/details?id=com.accreativos.whatshappening[Real Android App]
+
+== BAKING
+
+* https://github.com/josejuanmontiel/charla_gradle[Gradle]
+* https://github.com/josejuanmontiel/thymeleaf_talk[Thymeleaf]
