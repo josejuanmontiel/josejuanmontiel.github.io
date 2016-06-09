@@ -13,3 +13,9 @@
 
 == JCR Spring Extension
 * https://github.com/jbellmann/jcr-springextension/pull/3[Upgrade to spring 4.0]
+
+== Inkscape phyton extension
+https://github.com/hellerbarde/inkscape-boxmaker/pull/4
+
+== liferay-ddmtool
+https://github.com/emiloberg/liferay-ddmtool/pull/12
