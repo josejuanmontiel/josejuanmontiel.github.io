@@ -16,3 +16,10 @@ Resources
 
 * https://github.com/josejuanmontiel/charla_gradle[Gradle]
 * https://github.com/josejuanmontiel/thymeleaf_talk[Thymeleaf]
+	http://forum.thymeleaf.org/Thymeleaf-and-groovy-td4029599.html
+	https://twitter.com/nicolas_frankel/status/760441910272135168
+
+== OTHERS
+
+* http://slides.com/josejuanmontiel/javazero#/1[Introduccion a Java]
+* https://prezi.com/mjrharjp_qof/android-tareas-y-la-espera/[Android las tareas y la espera]

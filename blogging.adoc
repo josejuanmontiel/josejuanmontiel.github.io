@@ -1,0 +1,45 @@
+Github Pages
+	- https://pages.github.com/
+	- Generador por defecto
+		- https://help.github.com/articles/creating-pages-with-the-automatic-generator/
+
+Raiz
+	- https://github.com/josejuanmontiel/josejuanmontiel.github.io
+	- Blog
+		- https://github.com/josejuanmontiel/blog/tree/gh-pages
+
+JBake
+	- Gradle plugin
+		- https://github.com/jbake-org/jbake-gradle-plugin
+	- Ejemplo (cedric)
+		- https://github.com/melix/blog
+		- http://melix.github.io/blog/2014/02/hosting-jbake-github.html
+		- Buscar ejemplo ornay...
+			- www.orany.cz
+		- Subirlos:	http://jbake.org/community/sites.html 
+	- jmini.github.io/blog/2015/2015-12-27-jbake-migration.html
+
+	- Multiidioma
+		- http://jbake.org/docs/2.4.0/#complex_custom_metadata
+		- http://jbake.org/docs/2.4.0/#custom_templates
+		- https://groups.google.com/forum/#!topic/jbake-user/nZFDXLzxD9U
+
+Analitica
+	- https://analytics.google.com/analytics/web/?hl=es&pli=1#report/defaultid/a82879918w122442864p128110586/
+
+Discus
+	- https://josejuanmontiel.disqus.com/admin/settings/universalcode/
+	- 
+
+Discourse
+	- https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963
+	- Ejemplo: https://discourse.codinghorror.com/t/revisiting-the-home-theater-pc/93
+	- 
+
+Migrar Wordpress to Jekyll
+	- http://import.jekyllrb.com/docs/wordpressdotcom/
+Mirgrar WP/Jekkll to Jbake
+	- https://github.com/jbake-org/jbake.org/issues/35
+	- https://groups.google.com/forum/#!topic/jbake-user/RHkY4onO3dg
+	- https://github.com/Fisiu/exitwp 
+	- https://github.com/gilbertoca/gilbertoca.com/tree/master/src/jbake/templates 
