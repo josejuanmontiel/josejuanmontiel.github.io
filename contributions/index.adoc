@@ -19,3 +19,6 @@ https://github.com/hellerbarde/inkscape-boxmaker/pull/4
 
 == liferay-ddmtool
 https://github.com/emiloberg/liferay-ddmtool/pull/12
+
+== Dozer Mapping
+https://github.com/DozerMapper/dozer/pull/433
