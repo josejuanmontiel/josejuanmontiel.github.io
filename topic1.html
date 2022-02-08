@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/topic1.css">
+</head>
+<body style="font-family:Verdana;">
+
+    <script>
+        if(localStorage.currentVisibility == "none"){
+            document.body.style.setProperty("--visibility", "none")
+        } else if (localStorage.currentVisibility == "block"){
+            document.body.style.setProperty("--visibility", "block")
+        }
+
+        let links = document.getElementsByTagName('link');
+        for (let i = 0; i < links.length; i++) {
+            if (links[i].getAttribute('rel') == 'stylesheet') {
+                let href = links[i].getAttribute('href').split('?')[0];
+                    
+                let newHref = href + '?version=' + new Date().getMilliseconds();
+                    
+                links[i].setAttribute('href', newHref);
+            }
+        }
+    </script>       
+    </script>
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>Cinque Terre</h1>
+  <h3>Resize the browser window</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><a href="#block1">Block1</a></div>
+    <div class="menuitem-hidden"><a href="#block2">Block2</a></div>
+    <div class="menuitem"><a href="#block3">Block3</a></div>
+    <div class="menuitem-hidden"><a href="#block4">Block4</a></div>
+  </div>
+
+  <div class="main" id="block1">
+    <h2>Block 1</h2>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+  </div>
+
+  <div class="main-hidden" id="block2">
+    <h2>Block 2</h2>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+  </div>
+
+  <div class="main" id="block3">
+    <h2>Block 3</h2>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+  </div>
+
+  <div class="main-hidden" id="block4">
+    <h2>Block 4</h2>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+  </div>
+
+</div>
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+
+</body>
+</html>
+

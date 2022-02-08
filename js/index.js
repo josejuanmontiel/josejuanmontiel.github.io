@@ -69,3 +69,5 @@ var grid = function(numberPerSide, pixelsWith, pixelsHeight, colors) {
 
 var container = document.getElementById("container");
 container.appendChild(grid(5,  window.innerWidth, window.innerHeight, ["black", "black"]));
+
+localStorage.currentVisibility = "none"
