@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/topic1-scroll.css">
+
+    <!--[if IE 6]>
+    <style type="text/css">
+        html, body { height: 100%; overflow: auto; }
+        #sidebar { position: absolute; }
+        #page-wrap { margin-top: -5px; }
+        #ie6-wrap { position: relative; height: 100%; overflow: auto; width: 100%; }
+    </style>
+    <![endif]-->
+
+    <!--[if IE 7]>
+    <style type="text/css">
+        #sidebar { margin-top: -10px;  }
+        #page-wrap { margin-top: -5px; }
+    </style>
+    <![endif]-->
+</head>
+
+<body>
+
+  <script>
+    if(localStorage.currentVisibility == "none"){
+        document.body.style.setProperty("--visibility", "none")
+    } else if (localStorage.currentVisibility == "block"){
+        document.body.style.setProperty("--visibility", "block")
+    }
+
+    let links = document.getElementsByTagName('link');
+    for (let i = 0; i < links.length; i++) {
+        if (links[i].getAttribute('rel') == 'stylesheet') {
+            let href = links[i].getAttribute('href').split('?')[0];
+                
+            let newHref = href + '?version=' + new Date().getMilliseconds();
+                
+            links[i].setAttribute('href', newHref);
+        }
+    }
+  </script>
+
+
+<div id="ie6-wrap">
+
+<div id="page-wrap">
+
+    <div id="title-area">
+
+      <h1>Reflexion sobre el pasado</h1>
+
+</div>
+
+<div id="main">
+
+  <div class="main-hidden" id="mi_tio">
+    <h2>...mi tio.</h2>
+    <p>Si me paro a pensar, mis primeros contactos con ordenadores, fueron gracias a mi tio Pepe. No soliamos verlo muy a menudo, 
+    quizas por eso, cada vez que ibamos a su casa, me quedaba sorprendido por aquellos aparatos... Estariamos hablando de tener yo
+    unos 6 años quizas (1984) y en su casa rondaba un Commodore 64 (y tambien un monton de circuitos, chips, resistencias y mas cosas
+    que yo no conocia, pero me parecian misteriosas. De hecho, uno de los recueros mas arraigados que tengo, es el de diseñar un 
+    coche teledirigido, con todo tipo de gadget (que finalmente no constuimos) pero bueno... Años despues (quiza con 12, en 1990) 
+    haber soldado los componentes de un amplificador.</p>
+    <p>Pero bueno, dejemso de lado la electronica (algo con lo que siempre he tonteado, pero no domino) y volvamos a la informatica.
+    Recuerdo cuando algun amigo mio empezaba a trastear con los sprites de su MSX, yo tenia un commodore 16 (que para mi desgracia
+    no tenia juegos) asi que, de alguna revista saque el codigo de algun juego (que tenia que teclear, y que no teclee) pero bueno,
+    aun era un niño... tendrian que pasar muchos años para empezar a asimilar de verdad ciertas cosas.</p>
+    <p>Cada vez que iba a su casa, recuerdo las cintas del Commodore, y mas tarde los discos de 5 1/4. Recuerdo un verano, que me
+    dedique a renderizar unas fuentes, para un programa que estaba haciendo... no erran TrueType, pero si que dibuje las siluetas,
+    creo que solo en mayusculas, de todo el alfabeto.</p>
+    <p>Mas adelante, recuerdo historias... pero bueno, los recuerdos siempre estaran conmigo, y aquellas enseñanzas, tambien.
+    Y no solo las enseñanzas de que con tres campos era suficiente para indexar una bbdd dBaseIII, sino que, siempre dieras lo
+    mejor de ti, pero sin pisar a los demas.</p>
+    <p>Aun puede que quede en algun banco, un proceso de conciliacion de nominas, con un enfoque distinto, que se transmitira al
+    mainframe desde el puerto RS-232.</p>
+  </div>
+
+  <div class="main" id="la_universidad">
+    <h2>...la Universidad.</h2>
+    <p>Corria el año 1996, Google acababa de salir, en la Universidad habia conexion de alta velocidad... yo no fui de aquellos
+    que estaban en las BBS.. y si que recuerdo haber tenido un "cacharro" que regalaban con el periodico para conectarse a 
+    Infovia creo que se llamaba, pero no llegue a hacer nada con el. Lo dicho, cuando llegue, estaba todo empezando a despegar en 
+    modo masivo... y muchos otros, ya estaban por alli.</p>
+    <p>En la universidad de Murcia, recuerdo que habia un grupo de investigacion (creo que se llaman ahora) que se daba vueltas
+    por el campus con un Buggy... decian que estaban diseñando un vehiculo autonomo que haria que los camiones viajaran en comboy.
+    Tambien recuerdo que por aquel entonces, en Murcia, salio la licenciatura, yo hice la Ingenieria de Sistmas.</p>
+    <p>Aunque mi casa estaba a 1 hora de la universidad, cosa que ahora viviendo en Madrid, se ve de otra forma, tuve la suerte
+    de poder alojarme en un Campus dentro de la universidad, y eso, tengo que agradecerselo a mis padres. Y desde alli, conoci a
+    mis compañeros de primer año, y me lo pase bien... tan bien... que el primer año solo aprobe matematica discreta, y por los pelos.</p>
+    <p>¿Os habia dicho que tarde en entender de que iba eso de la informatica?... pues si, tarde en pillarle el truco. Ese primer año,
+    me quede descolgado, junto con el 80% de la clase, eso si... mal de muchos consuelo de tontos. Decian que la universidad era dura,
+    ahora pienso que nosotros eramos demasiado blandos. Pero bueno...</p>
+    <p>Habia asignaturas que ahora recuerdo con cariño: Metodologia de la programacion (programacion en pseudo-codigo), 
+    Sistemas Operativos, Matematica Estadistica, Programacion de circuitos, Diseño de base de datos... en fin, un monton de asignaturas,
+    un monton de practicas: diseño de un sistam de ascensores, una implementacion de bash linux... un monton de cosas, que cuando 
+    eres joven te cuesta ver y entender, pero que ahora desde la distancia... entiendes de otra forma.</p>
+    <p>Quizas sea que los profesores no se esforzaban, o quizas era cosa tuya... cosa de tus circunstancias. Recuerdo una conversacacion
+    con un amigo italiano, en la que me dijo: "Tu abuelo puede darte los mejores consejos de tu vida, pero, o lo sientes en tus carnes,
+    o no seras capaz de asimilarlo"</p>
+    <p>Y supongo que algo de eso paso, el primer año fue en blanco, en los 4 siguientes saque todas las asignaturas menos tres... 
+    asi que el ultimo año, fue un paseo, me dio tiempo a aprender a patinar (benditos creditos de libre configuracion) a jugar al 
+    Hockey Linea, a echarme novia y a descubrir el mundo ante mi... Ya estamos en el año 2001/2002</p>
+  </div>
+
+  <div class="main-hidden" id="primer_trabajo">
+    <h2>...fue de becario de sistemas</h2>
+    <p>Ese ultimo año (o quizas el anterior, ya no recuerdo) me dio tiempo para hacer varias cosas, entre ellas, un amigo me consiguio
+    un puesto de encargado de sistemas en un departamento de bioquimica, donde se dedicaban a realizar calculos de modelado de nuevas
+    moleculas para uso cientifico... y alli tenia buena conexion para usar el Audiogalaxy, aprendi a editar la pagina web del departamento,
+    conexiones via ftp para subir documentos. Alli estuve tres meses, hasta que el departamento agoto el presupuesto y yo aprendi lo basico.</p>
+    <p>Despues de esa fase, el siguiente lugar fue en Acisa, una empresa de mi ciudad que se dedicaba a relizar programas en RPG400,
+    fue una pequeña fase de becario, donde estuve poco tiempo... pero me dio tiempo a aprender un poco de "ensamblador" para mainframes.</p>
+  </div>
+
+  <div class="main" id="formacion_empleo">
+    <h2>...para desempleados... y Meta-10</h2>
+    <p>Y otra de las cosas a las que me dio tiempo el ultimo año, fue a apuntarme a un curso de redes para desempleados. Era un curso de 
+    450 horas, y la verdad es que ahi si que aprendi un monton de cosas, incluso me lo convalidaron como creditos de libre configuracion
+    (como el curso de patinaje).</p>
+    <p>A la vuelta a mi ciudad, tambien me dio para hacer otro curso para desempleados, en este caso de diseño web, por aquellos tiempos,
+    se detectaba la resolucion de la pantalla y se hacian diseños que se adaptaran a esa resolucion, las imagenes... tenias de varios tamaños
+    para que cargaran mas rapido sin desperdicio de kb. En fin, estamos hablando de finales del 2002.</p>
+    <p>Y una vez que ya tenia la carrera terminada, tenia dotes basicas de redes y diseño web (junto con lo aprendido en la universidad)
+    ya estaba listo para buscar trabajo de verdad, de ese que te pagaban 600 euros al mes. Y lo encontre en era una empresa que se dedicaba
+    a las recargas de saldo en locutorios (entre otras cosas). Estaban expandiendo mercado y estaba dentro de esa expansion, hasta recuerdo
+    que ficharon a dos estudiantes de practicas de un modulo de FP. Y si os digo la verdad, no recuerdo muy bien lo que hice alli, pero 
+    trastee con informes en Cristal Reports, hicimos practicas con unas camaras IP Veo observer... y por el camino alguna cosa mas salio.</p>
+  </div>
+
+  <div class="main-hidden" id="docencia">
+    <h2>...cuando empiezo a juntar las piezas</h2>
+    <p>Ya dije, que durante la universidad, pocos son capaces de captar el conocimiento el primer año. Y cuando termine, mi opinion en que
+    en la universidad te enseñan a como aprender, y fue cuando termine, que empece a darme cuenta que emprendia un camino de continuo
+    reciclaje, eso de pensar que ya sabias todo lo necesario, no iba con esta profesion, y por tanto... no habia que aprender algo especifcio,
+    sino que habia que aprender a aprender... y hacerlo rapido.</p>
+    <p>Mas tarde leeria un libro: "My Job Went to India by Chad Fowler" y tenia un par de capitolos que venian a dicir: "Se experto en algo, 
+    y yo le añado que mejor en un par de cosas" y tambien "Conoce un poco de todo" y creo que ahi reside parte del truco para sobrevivir
+    (que no triunfar, aun) hay que entender las tripas de las cosas, estar en un constante estado de interrogacion que nos permite estar 
+    atentos a como funcionan las cosas.</p>
+    <p>Asi que cuando el amor me trajo a Madrid, lo primero que hice (o la excusa para venir) fue hacer un master en programacion Java,
+    hablamos de 2004, Java ya era Enterprise, teniamos los Ejb2.1 y un monton de cosas mas. Fue tras empezar el master, de venir a Madrid
+    cuando empece a "gustarme" veia como funcionanban las tripas de las cosas, por ejemplo el sistema grafico AWT de java. Cada cosa el master
+    destripaba, yo la entendia, la practicaba y estaba ansioso por ponerla en prueba.</p>
+    <p>Durante el master recuerdo que pasaron algunas cosas, los atentados de Madrid en Atocha (11-M-2004), y tambien, mi padre vino a Madrid
+    a operarse de un cancer de prostata</p>
+    <p>Y una vez terminado el master, y antes de poner a prueba todo lo aprendido, me ofrecieron dar un curso de 60 horas de introducciona Java.
+    Y fue interesante, tener que enfrentarme a enseñar lo que sabia a los demas, sin posibilidad de error, siguiendo un temario, y a algunos/as
+    estudiantes que no querian estar alli. La docencia en sus distintas variantes siempre es un mundo lleno de retos.</p>
+  </div>
+
+  <div class="main" id="madrid">
+    <h2>...que la burbuja ya no es lo que era.</h2>
+    <p>Y entre unas cosas y otras nos plantamos en Abril de 2004, la abundancia del 96-2000... ya habia pasado, pero yo no lo sabia. A esas
+    edades no estabas tan atento al mercado como lo estas ahora, y menos viniendo de fuera de la capital. Todo aqueño que paso durante los
+    ultimos años de universidad, yo no lo sabia, pero bueno, seguia habiendo empleos disponibles.</p>
+    <p>Recuerdo que hice unas cuantas entrevistas, incluso algunas con examen... y en alguna llegue a una entrevista personal.
+    Finalmente termine en un VectorSF de 80 empleados que estaba en las instalaciones de la univerdad Alfonso X el Sabio.</p>
+    </p>
+  </div>
+
+  <div class="main" id="vectorsf">
+    <h2>...mi primer empleo en la capital</h2>
+    <p>Todavia recuerdo que entre a formar parte de un grupo, que se estaba formando, el grupo de Portales, por aquel tiempo con Fatwire 5.5
+    Una de las primeras peticiones que me hicieron, fue montar una libreria de operaciones con cadenas dentro de las JSP... funciones de reemplazo
+    de cadenas y cosas similares (o eso creo recordar).</p>
+    <p>Y cuando el grupo empezaba a estar engrasado, nos pusimos manos a la obra: el portal del accionista de Banesto (lo mismo era 2004 todavia)
+    Recibiamos unas maquetas html que troceabamos e ibamos injectando en las JSP que itaraban los contenidos, un sistema te templating rustico, pero
+    templating. A partir de ahi las cosas empieza a acelerarse, recuerdo que una noche toco apretar porque no llegabamos a la fecha de entrega,
+    a la salida de la universidad pase un control policial en un pueblo camino a casa... eran las 3 de la mañana, y pase el control de la entrada y 
+    el de salida del pueblo... recuerdo como el segundo policia me dijo, pero hombre, di que ya te hemos parado.</p>
+    <p>El grupo crecia, la vida era feliz, se respiraba un buen ambiente, y se crecia tan rapido que toco mudarse a la Finca, el grupo de portales
+    fue de los ultimos en mudarse, teniamos que terminar no se que portal para el Santander.</p>
+    <p>Cosas curiosas, por aquella epoca, estabamos a las ordenes de otra consultura en la parte funcional... tambien recuerdo como adquirimos un
+    pequeño grupo de personas de otra empresa... recuerdo ir a ayudar otra noche al grupo de consultores para llegar a tiempo... la vida era entretenida.</p>
+    <p>Entre medias de todo eso, recuerdo que gane el concurso de la idea para un chrismas corporativo (de la realizacion se encargaron los expertos en diseño).
+    Recuerdo una fiesta de navidad tematica en un restaurante italiano estilo mafia. Tambien recuerdo como hackeabamos las herramientas de edicion que proporcionaba
+    fatwire para poder acelerar los desarrollos... habia de todo un poco... y uno iba creciendo profesionalmente en su primer empleo, incluso me plante cambiar,
+    de trabajo, recuerdo como por aquel entonces se decia... que solo se ganaba mas si cambiabas de trabajo, y lo intente... pero alguien me convencio de que si
+    los portales se me quedaban pequeños, podria seguir creciendo en otra seccion nueva, de Java puro.</p>
+    <p>Porque lo que se llevaba por entonces eran los IDES para desarrollar como churros, en el BBV tenian uno que iba sobre Visual Age de IBM,
+    en el Santander tenian otro que iba sobre Eclipse y con el que podias conectar pelotitas para realizar flujos sin picar una sola linea de codigo.
+    Pues una de las primeras cosas que hice en ese grupo de Javeros fue programar una de esas bolas, que hacia por debajo una conexion a FTP,
+    y para ello hice mi primera pull request (por aquel entonces no se llamaba asi aun, creo que incluso era CSV el control de versiones) al 
+    proyecto de apache commons https://commons.apache.org/proper/commons-net/changes-report.html#a2.1[FTPS (TLS and SSL) is now supported. Thanks to Jose Juan Montiel, Paul Ferraro, and Satoshi Ishigami.]</p>
+    <p>Una vez superado ese primer reto... la cosa siguio animandose, el equipo crecio y di con buenos compañeros con mas experiencia de los que aprender.
+    Y los proyectos fueron avanzando, codifique un plugin para internet explorer que tomaba metricas de cuanto tardaban en renderizar las paginas.
+    Habia una herramienta de calidad, similar a las que habia entonces... y hay ahora, y me dedicaba a realizar reglas, que tenia que recorrer el arbol sintactico
+    del codigo analizado (AST o como quieras llamarlo). Tambien habia una herramienta interna de reporting que iba evolucionando. En fin, eran tiempos felices.</p>
+  </div>
+
+  <div class="main-hidden" id="vientos_de_cambio">
+    <h2>...alma joven, que quiere ver mas</h2>
+    <p>Y aunque la cosa no iba mal del todo, estaba recien casado y con hipoteca a la vista, supongo que entre esas cosas, y la juventud
+    que recorria mis venas, pensaba que era momento de cambiar para ver que se movia en el mundo. Y aunque recuerdo que alguien me dijo:
+    "Que falta hace ver lo demas, si sabes que esta peor que lo que tienes" pero como ya hemos dicho, sino lo sufres en tus carnes, parece que no aprendes.</p>
+    <p>Asi que emprendi rumbos de cambio.</p>
+  </div>
+
+  <div class="main" id="sanidad_ferrocarril">
+    <h2>...decidir sobre como se realiza el proyecto</h2>
+    <p>Y tras varias entrevistas (on the road again) termine en Entel, en un proyecto para Sanitas. Ganaba mas, y tenia mas responsabilidades,
+    me pusieron de jefe de proyecto (por entonces aun se llamaba asi jajaja) en fin, era a mi al que le tocaba decidir como hacer las cosas.
+    Si me paro a pensar, todavia recuerdo detalles... usaban VisualSourceCode de microsoft creo, como sistema de control de versiones, y como era
+    una movida, monte un SVN en mi portatil y el equipo tiraba de aun (aun no estaba de moda GIT, sino otro gallo nos hubiera cantado jajaja)
+    tambien recuerdo que me dio por usar un monton de plugins de paginacion de jquery... pero que movida que los ordenadores de la gente que lo 
+    iba a usar tenian internet explorer 6, que ya sonaba a viejo en 2007, y bueno, claro la tenologia eran JSF con EJB por debajo, asi que buenos,
+    en un par de dia refactorizamos la paginacion, tampoco fue tan grave.</p>
+    <p>El caso es que recuerdo que ya se torcio el asunto desde el principio cuando ibamos a trabajar en las oficinas de cliente, que me pillaban
+    mejor que donde me mandaron al final, el espacio era pasta... y la pasta nunca sobra.</p>
+    <p>Tambien me pusieron a un par de chicos de mi edad (o incluso mayores) muy majos los dos, pero uno tenia ideas distintas de como se debia 
+    implementar el proyecto. Segun me dijeron mas tarde uno de sus jefes, venia de pasarlo mal en otro proyecto y se ve que no queria repetirlo.</p>
+    <p>Al final la cosa se fue torciendo, pero no estoy muy seguro que fuera todo cosa mia, al final, hay cosas que quedan fuera de tu alcance,
+    y mas cuando eres un pipiolo. Aun tardaria en aprender a dar lo mejor de mi, y que me importara una mierda lo demas... lo que no puedes controlar,
+    la gente toxica que te toca a tu alrededor.</p>
+    <p>Asi que, tras 6 meses de una montaña rusa de emociones... volvi a dar el salto, esta vez a traves de otra consultora mas pequeña, a
+    trabajar en el mantenimiento de las maquinas de venta de billetes de renfe larga distancia (creo recordar).</p>
+    <p>Aquello era otro ritmo, si que era en la oficina de cliente, recuerdo que estabamos en Delicias, al ladito del museo del ferrocarril.
+    Entre a formar parte de un grupo de 3, uno de Renfe, otro chico y yo. Tuvimos una fase de adaptacion al los sistemas, y si os digo la verdad
+    no recuerdo si llegamos a hacer algo en "produccion". Recuerdo que me empape del codigo existente, de la interrelacion con otros equipos/librerias,
+    incluso nuevos desarrollos para unas PDAs para los revisores (esas PDA llevaban una maquina virtual IBM J9... recuerda finales de 2007, de 
+    Android aun nada. En fin, solo hace 14 años pero en este mundo... eso es una eternidad.</p>
+    <p>En fin, que un viejo compañero me dio un toque, por si me queria unir a su nueva empresa y no tarde mucho en decidirme. Recuerdo como 
+    cuando lo comunique al responsable de Indra (que era la que llevaba el proyecto) me preguntaron si en mi consultora no me trataban bien,
+    que me podian contratar ellos, dije que no... y dijeron: ¿entonces el proyecto no te montiva? y dije que si... Visto ahora con perspectiva,
+    un mantenimiento no tiene porque verse como algo malo, te da tiempo para aprender (incluso de otras cosas) y aunque la gente diga que no,
+    SIEMPRE se puede mejorar un codigo legacy con pequeñas iteraciones, se puede hacer introspeccion con mecanismos de test, en fin, hay mil
+    maneras de meterle mano al codigo, para mejorarlo y no aburrirte, dando siempre lo mejor de ti. Pero si el problema es que no quieres dar
+    lo mejor de ti, entonces, pues corres el peligro de que se note.</p>
+  </div>
+
+  <div class="main-hidden" id="volvemos_a_encontrarnos">
+    <h2>...debo ser un culo inquieto</h2>
+    <p></p>
+    <p>Lecturas en el metro... stackoverflow...hackaday...</p>
+    <p></p>
+    <p>Me tientan de nuevo...</p>
+  </div>
+  
+  <div class="main" id="eurobits">
+    <h2>...hay que aprender de todo</h2>
+    <p></p>
+    <p></p>
+    <p>meetups...</p>
+  </div>
+
+  <div class="main-hidden" id="desencuentros_y_amistades">
+    <h2>...de todo hay que aprender</h2>
+    <p></p>
+    <p></p>
+    <p>Hitos empresariales y personales.</p>
+  </div>
+
+  <div class="main" id="tecnilogica">
+    <h2>...y las agencias de viajes</h2>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+
+  <div class="main" id="transicion">
+    <h2>...en tres años</h2>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+
+  <div class="main" id="la_venta">
+    <h2>...y como pasamos a ser 4000</h2>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+
+  <div class="main" id="accenture">
+    <h2>...empiezo a currar con los grandes?</h2>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+
+   <div class="main-hidden" id="malos_tragos">
+    <h2>...cuanto menos gente toxica, mejor</h2>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+
+  <div class="main-hidden" id="buenos_amigos">
+    <h2>...de las que se puede disfrutar</h2>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+
+  <div class="main" id="accenture_tente">
+    <h2>...para que te entretengas</h2>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+ 
+</div>
+
+</div>
+
+</div>
+
+<div id="sidebar">
+<ul>
+  <li class="menuitem-hidden"><a href="#mi_tio">El verdadero inicio...</a></li>
+  <li class="menuitem"><a href="#la_universidad">El inicio...</a></li>
+  <li class="menuitem-hidden"><a href="#primer_trabajo">El primer trabajo remunerado...</a></li>
+  <li class="menuitem"><a href="#formacion_empleo">Formacion y primer trabajo, serio...</a></li>
+  <li class="menuitem-hidden"><a href="#docencia">Master y docencia...</a></li>
+  <li class="menuitem"><a href="#madrid">Toca buscar empleo en la captital...</a></li>
+  <li class="menuitem"><a href="#vectorsf">VectorSF...</a></li>
+  <li class="menuitem-hidden"><a href="#vientos_de_cambio">Toca conocer otras cosas...</a></li>
+  <li class="menuitem"><a href="#sanidad_ferrocarril">Y me toco decidir...</a></li>
+  <li class="menuitem-hidden"><a href="#volvemos_a_encontrarnos">Falta de motivacion...</a></li>
+  <li class="menuitem"><a href="#eurobits">Empresa de producto...</a></li>
+  <li class="menuitem-hidden"><a href="#desencuentros_y_amistades">Roces y crecimiento...</a></li>
+  <li class="menuitem"><a href="#tecnilogica">Tecnilogica...</a></li>
+  <li class="menuitem"><a href="#transicion">De 30 a 100...</a></li>
+  <li class="menuitem"><a href="#la_venta">La venta...</a></li>
+  <li class="menuitem"><a href="#accenture">Accenture... y las empresas del ibex</a></li>
+  <li class="menuitem-hidden"><a href="#malos_tragos">Mas roces, ya con la edad...</a></li>
+  <li class="menuitem-hidden"><a href="#buenos_amigos">Buenas amistades...</a></li>
+  <li class="menuitem"><a href="#accenture_tente">Accenture... mas ibex...</a></li>
+</ul>
+
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+:root {
+    --visibility: none;
+}
+
+* { margin: 0; padding: 0; }
+body { font: 14px/1.4 Georgia, serif; }
+#page-wrap { width: 800px; margin: 15px auto; position: relative; }
+p { margin: 0 0 15px 0; }
+p:first-child { background: #fffcde; padding: 10px; }
+#sidebar ul { background: #eee; padding: 10px; }
+li { margin: 0 0 0 20px; }
+#main { width: 390px; float: left; }
+#sidebar { width: 400px; position: fixed; left: 50%; top: 90px; margin: 0 0 0 110px; }
+
+.menuitem {
+}
+.menuitem-hidden {
+    display: var(--visibility);
+}
+.main {
+}
+.main-hidden {
+    display: var(--visibility);
+}
+
