@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html, body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        iframe {
+            display: block;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.getContent = function(id) {
+            var xhttp;
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+
+                    //Table string in HTML format
+                    const htmlString = this.responseText;
+
+                    //Parse using DOMParser native way
+                    const parser = new DOMParser();
+                    const $newTable = parser.parseFromString(htmlString, 'text/html');
+
+                    //Here you can select parts of your parsed html and work with it
+                    const $content = $newTable.querySelector(id);
+
+                    document.getElementById("text_from_game").innerHTML = $content.innerHTML;
+                }
+            };
+            xhttp.open("GET", "https://josejuanmontiel.github.io/topic1.html", true);
+            xhttp.send();   
+        }
+
+        function resize(iframe) {
+            iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+            iframe.contentWindow.addEventListener('resize', () => {
+                iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+            });
+        }
+        function resizeEbiten(iframe, parentId, aspectRatio) {
+            let parent = document.getElementById(parentId);
+            let w = parent.clientWidth;
+            iframe.width = w;
+            iframe.height = w * aspectRatio;
+            iframe.contentWindow.addEventListener('resize', () => {
+                let w = parent.clientWidth;
+                iframe.width = w;
+                iframe.height = w * aspectRatio;
+            });
+        }
+    </script>
+</head>
+<body>
+<main>
+    <div>
+        <iframe src="game.html" allow="autoplay" width="640" height="480"></iframe>
+    </div>
+    <div id="text_from_game"><p>xxx</p></div>
+    <!-- div>
+        <iframe src="game.html" onload="resize(this);" scrolling="0" frameborder="0"></iframe>
+    </div>
+    <div>
+        <iframe src="game.html" onload="resizeEbiten(this, 'mod', 12/18)"></iframe>
+    </div -->
+</main>
+</body>
+</html>
