@@ -66,9 +66,10 @@
 <body>
 <main>
     <div>
-        <iframe src="game.html" allow="autoplay" width="640" height="480"></iframe>
+        <iframe id="iframegame" src="game.html" allow="autoplay" width="640" height="480"></iframe>
     </div>
     <div id="text_from_game"><p>xxx</p></div>
+    <div><button onclick="document.getElementById('iframegame').contentWindow.MyGoFunc(5)">add</button></div>
     <!-- div>
         <iframe src="game.html" onload="resize(this);" scrolling="0" frameborder="0"></iframe>
     </div>
