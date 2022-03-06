@@ -155,6 +155,7 @@ func (g *Game) Update(screen *ebiten.Image) error {
 
 				g.js.DisplayMessage(g.player1.Score)
 				g.js.DisplayMessage(g.player1.Score)
+
 			}
 
 			g.rally++
@@ -213,7 +214,7 @@ func (g *Game) Draw(screen *ebiten.Image) error {
 
 	pong.DrawCaption(g.state, pong.ObjColor, screen)
 	pong.DrawBigText(g.state, pong.ObjColor, screen)
-	pong.DrawFromJs(g.js.Funcjs, screen)
+	// pong.DrawFromJs(g.js.Funcjs, screen)
 
 	if g.state != pong.ControlsState {
 		g.player1.Draw(screen, pong.ArcadeFont, false)
@@ -242,6 +243,7 @@ func main() {
 		// Define the function "MyGoFunc" in the JavaScript scope
 		js.Global().Set("MyGoFunc", js.FuncOf(j.MyGoFunc))
 	}
+
 	ai := true
 	g := NewGame(j, ai)
 	if err := ebiten.RunGame(g); err != nil {

@@ -3,7 +3,6 @@ package pong
 import (
 	"image/color"
 	"log"
-	"strconv"
 
 	"github.com/golang/freetype/truetype"
 	"github.com/hajimehoshi/ebiten"
@@ -106,22 +105,4 @@ func DrawBigText(state GameState, color color.Color, screen *ebiten.Image) {
 		text.Draw(screen, l, ArcadeFont, x, (i+4)*fontSize, color)
 	}
 
-}
-
-func DrawFromJs(funcjs int, screen *ebiten.Image) {
-	w, _ := screen.Size()
-	var texts []string
-	texts = []string{
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"->" + strconv.Itoa(funcjs) + "<-",
-	}
-	for i, l := range texts {
-		x := (w - len(l)*fontSize) / 2
-		text.Draw(screen, l, ArcadeFont, x, (i+4)*fontSize, ObjColor)
-	}
 }
