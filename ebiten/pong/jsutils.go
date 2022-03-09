@@ -18,11 +18,11 @@ func (j *JsUtils) DisplayMessage(score int) {
 		parent := js.Global().Get("parent")
 		document := parent.Get("document")
 		if score == 5 {
-			textDiv := document.Call("getElementById", "text_from_game")
+			document.Call("getContent", "#mi_tio")
+
+			textDiv := document.Call("getElementById", "text_wip")
 			textDiv.Set("innerHTML", "WIP Estas de suerte... <a href=\"../topic1.html\">Adelante</a>")
 		}
-
-		// document.Call("getContent", "#mi_tio")
 
 		// p := document.Call("createElement", "p")
 		// p.Set("innerHTML", "Hello WASM from Go!")
