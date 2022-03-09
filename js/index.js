@@ -35,7 +35,7 @@ var grid = function(numberPerSide, pixelsWith, pixelsHeight, colors) {
             box.setAttribute("id", "b" + number); 
             g.appendChild(box);
 
-            if (rand==i*numberPerSide+j+1) {
+            if (rand+1==i*numberPerSide+j+1) {
                 var a = document.createElement('a');
                 a.title = "Secret Game";
                 a.href = "main.html";
@@ -71,3 +71,20 @@ var container = document.getElementById("container");
 container.appendChild(grid(5,  window.innerWidth, window.innerHeight, ["black", "black"]));
 
 localStorage.currentVisibility = "none"
+
+const currentAttempts = parseInt(localStorage.getItem('attempts') ?? '0')
+localStorage.setItem('attempts', (currentAttempts + 1).toString())
+/*
+if (currentAttempts>=3) {
+    // https://stackoverflow.com/questions/19639506/continuous-color-transition
+    var s = document.getElementById('').style,
+    f = false,
+    c1 = '#000000',
+    c2 = '#ffffff';
+
+    setInterval(function() {
+        s.fill = f ? c2 : c1;
+        f = !f;
+    }, 3000);    
+}
+*/
