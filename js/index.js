@@ -7,6 +7,9 @@ var numberPerSide = 20;
 var size = 10;
 var pixelsPerSide = 400;
 
+const currentAttempts = parseInt(localStorage.getItem('attempts') ?? '0')
+localStorage.setItem('attempts', (currentAttempts + 1).toString())
+
 var grid = function(numberPerSide, pixelsWith, pixelsHeight, colors) {
     var svg = document.createSvg("svg");
     svg.setAttribute("width", pixelsWith);
@@ -40,6 +43,16 @@ var grid = function(numberPerSide, pixelsWith, pixelsHeight, colors) {
                 a.title = "Secret Game";
                 a.href = "main.html";
                 box.appendChild(a);
+                if (3 <= currentAttempts && currentAttempts <= 5) {
+                    var animate = document.createSvg("animate");
+                    animate.setAttribute("attributeName", "fill");
+                    animate.setAttribute("dur", "3s");
+                    animate.setAttribute("calcMode", "discrete");
+                    animate.setAttribute("values", "#eeeeee;transparent");
+                    animate.setAttribute("repeatCount", "indefinite"); 
+                    animate.setAttribute("begin", "0s"); 
+                    box.appendChild(animate);
+                }
             } else {
                 var text = document.createSvg("text");
                 text.setAttribute("fill", color2);
@@ -68,23 +81,6 @@ var grid = function(numberPerSide, pixelsWith, pixelsHeight, colors) {
 };
 
 var container = document.getElementById("container");
-container.appendChild(grid(5,  window.innerWidth, window.innerHeight, ["black", "black"]));
+container.appendChild(grid(5,  window.innerWidth, window.innerHeight, ["#000000", "#000000"]));
 
 localStorage.currentVisibility = "none"
-
-const currentAttempts = parseInt(localStorage.getItem('attempts') ?? '0')
-localStorage.setItem('attempts', (currentAttempts + 1).toString())
-/*
-if (currentAttempts>=3) {
-    // https://stackoverflow.com/questions/19639506/continuous-color-transition
-    var s = document.getElementById('').style,
-    f = false,
-    c1 = '#000000',
-    c2 = '#ffffff';
-
-    setInterval(function() {
-        s.fill = f ? c2 : c1;
-        f = !f;
-    }, 3000);    
-}
-*/
