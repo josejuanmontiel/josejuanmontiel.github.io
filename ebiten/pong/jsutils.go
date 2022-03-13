@@ -1,3 +1,5 @@
+//go:build js || wasm
+
 package pong
 
 import (
@@ -15,19 +17,11 @@ func (j *JsUtils) DisplayMessage(score int) {
 	if runtime.GOARCH == "js" || runtime.GOOS == "js" {
 		parent := js.Global().Get("parent")
 		document := parent.Get("document")
-<<<<<<< HEAD
-		if score == 1 {
-			textDiv := document.Call("getElementById", "text_from_game")
-			textDiv.Set("innerHTML", "Dynamic Content")
-		} else {
-			document.Call("getContent", "#mi_tio")
-=======
 		if score == 5 {
 			document.Call("getContent", "#mi_tio")
 
 			textDiv := document.Call("getElementById", "text_wip")
 			textDiv.Set("innerHTML", "WIP Estas de suerte... <a href=\"../topic1.html\">Adelante</a>")
->>>>>>> 2ee6f0b (game wip)
 		}
 
 		// p := document.Call("createElement", "p")
@@ -44,4 +38,9 @@ func (j *JsUtils) MyGoFunc(this js.Value, args []js.Value) interface{} {
 		"hello":  "world",
 		"answer": j.Funcjs,
 	}
+}
+
+func (j *JsUtils) RegisterGlobalFunc() {
+	// Define the function "MyGoFunc" in the JavaScript scope
+	js.Global().Set("MyGoFunc", js.FuncOf(j.MyGoFunc))
 }
