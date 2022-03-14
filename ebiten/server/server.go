@@ -13,7 +13,7 @@ var gz = flag.Bool("gzip", false, "enable automatic gzip compression")
 
 func main() {
 	flag.Parse()
-	h := wasmContentTypeSetter(http.FileServer(http.Dir("../game")))
+	h := wasmContentTypeSetter(http.FileServer(http.Dir("..")))
 	if *gz {
 		h = gziphandler.GzipHandler(h)
 	}
