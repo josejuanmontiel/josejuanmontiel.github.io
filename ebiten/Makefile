@@ -9,6 +9,7 @@ native:
 	go build -o ../game/pong .
 
 # TODO
+# Hacer que al final de cada pantalla vaya apareciendo parte de mi numero de telefono
 # Hacer un ejemplo de texto de inicio de star wars
 # Hacer un ejemplo de juego de bomberos
 # Hacer un ejemplo de outrun
