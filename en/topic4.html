@@ -1,0 +1,168 @@
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reflection on the past</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main-kiss.css">
+
+    <script src="../js/modernizr.js"></script>
+    <script defer src="../js/fontawesome/all.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body id="top">
+  
+    <script>
+      if(localStorage.currentVisibility == "none"){
+          document.body.style.setProperty("--visibility", "none")
+      } else if (localStorage.currentVisibility == "block"){
+          document.body.style.setProperty("--visibility", "block")
+      }
+  </script>
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Content
+    ================================================== -->
+    <div class="s-content">
+
+      <div class="row">
+        
+          <div id="sidebar" class="s-content__sidebar large-2 column">
+
+            <div class="widget widget--categories">
+              <h3 class="h6">categories.</h3> 
+              <ul>
+                <li class="menuitem-hidden"><a href="#tente_open_platform">Open platform...</a></li>
+                <li class="menuitem"><a href="#on-call-tutti">On the bench...</a></li>
+                <li class="menuitem"><a href="#data">Data Architecture...</a></li>
+                <li class="menuitem"><a href="#adobe">Adobe...</a></li>
+                <li class="menuitem-hidden"><a href="#unsung-hero">Esprigen si doich...</a></li>
+                <li class="menuitem-hidden"><a href="#futuro">Recibling your neurones...</a></li>
+                </ul>
+            </div>
+          </div> <!-- end sidebar -->
+
+          <div id="main" class="s-content__main large-10 column">
+              <section class="page-content">
+                <div class="main-hidden" id="tente_open_platform">
+                  <h2>...dig, dig, dig.</h2>
+                  <p> and things in life, it turned out that a project came out with that company that I could not speak years ago.This time the
+                  It was more ambitious, instead of only 150 people from our company was a total of 1200 distributed throughout the world,
+                  And of different companies, of course. </p>
+                  <p> The fact is that they had considered making an implementation from scratch, using Driven Desing, to organize
+                  The different domains that arose from rebuilding the 70 different applications that had on a single platform, open,
+                  where each domain was operated by a set of squads independently, exposing some APIs on a portal for
+                  that the rest of the domains will communicate with what they need.These squad would operate the development, deployment and maintenance
+                  Taking advantage of the tools they were developing for a multi-cloud.It was also given a lot of weight
+                  To the testing, using karate.The technological stack remained the same as years ago, evolved to the most friendly versions,
+                  of the Java libraries, with Spring Boot, and that yes, a hexagonal architecture. </p>
+                  <p> The fact is that starting was quite well, as far as possible, we managed to start the complete development flow,
+                  From the definition of the API with Openopi, its generation of automated code, the implementation of the logic, a persistence
+                  with H2 in memory (because we still did not have the infra available for the BBDD) and all this with a Clean architecture, like the one that
+                  They generated the example artifacts, even automated the automatic tests of the APIS with karate and connected the
+                  Results with X-ray, everything ordered and in less than a month and a half, we even connect with your kafka to broadcast events. </p>
+                  <p> The definition of the domains was not so fine, and except the one that had touched us.In fact it was a bit anemic, but
+                  Well, we were ready for us, the team was greased and ready for work, we just had to search
+                  replacement for the Qa Lead (which we do not end up finding) because the second Qa (in the end we were 2 squad) complied with the
+                  work that was expected (and there was not much, because nothing) and I even had to do the tests of Tech Lead, but between
+                  Some things and others had already happened almost 3 months, and it turned out that the code was not hexagonal.
+                  <p> So after the third (or fourth) Refactor of the APIs to meet the domain requirements (in their refactorization
+                  constant) we had to address the refractorization of the code of our domain (anemic, not at all) to make it
+                  Hexagonal, and the aggregates had the logic that was expected of them in a hexagonal design.And how it seems that they did not have
+                  very clear if the aggregates had to be immutable or not, and between the December bridge and that our person in charge was the week
+                  On vacation, they almost gave us Christmas to approve the refactor.A little earlier I find out that I didn't give the size
+                  For Tech Lead, 4/5 in the technical interview and 7/10 in the technical test. </p>
+                  <p>On the interview I only direct, that after discovering years ago the concurrence in Go, I always have to refresh the concurrence in Java.
+                    And about the technical test, I will only say that if you are interested <a href="https://josejuanmontiel.github.io/on-call-tutti/#/dont-believe-everything-you-think">look here</a>.
+                    I will say anything about that after performing the technical test a Saturday morning and part of Sunday morning, after eating
+                    My algorithm did not throw, and after many laps and before going to sleep, I choose to make it work, changing ... </p>
+                  <p> and I will not say anything after the technical test, it was when they began to look at the micro code, and start saying no
+                  He was hexagonal and putting herself ... Anyway, I'm not going to say any of that. </p>
+                  <p> because it turned out that before Christmas, in which they had asked not to take vacations, beyond the holidays,
+                  They were approved by the refactor, and incidentally, in parallel we implemented the outbox pattern they requested, with their own library,
+                  To send domain events ... but or surprise, at the return of Christmas, they told us that they dispensed with our services.
+                  Nor will I say anything that the domain had been out of the MVP of mid -January (for which we could not take vacations)
+                  And that they had delayed it, that the definition had been delayed sure that it had nothing to do, the case is that we were outside.
+                  Of course, the weeks missing we did the transfer as some gentlemen and we finished everything they sent us. </p>
+                  <p> In summary, I know XXX and I know Yyy, but I am not going to tell you anything: D Brike your conclusions if you do not believe everything they tell you. </p>
+                </div>
+                <div class="main" id="on-call-tutti">
+                  <h2>...Taking advantage of ordering ideas</h2>
+                  <p>After receiving that <a href="https://josejuanmontiel.github.io/on-call-tutti">call</a> inspected, you can take advantage to do
+                  Technological recap, and this project emerged, with the idea of ​​looking for the optimal way to implement algorithms that solve problems
+                  Specific.Given that challenge, take the opportunity to set up a monorepo, with Bazel, with code in Java, Go, and Python.Also as I had mounted
+                  In Github, take the opportunity to make an action on Go, and also start learning Python, and thus start paving my path to Machine Learning.</p>
+                </div>
+                <div class="main" id="data">
+                  <h2>...What is this?</h2>
+                  <p>That month, you can also finally make an internal course of Data Architecture, about 25 intense hours in which I learned about architectures
+                  of data, how to make acquisition, treatment, classification and metadata, a review of the world of bigdata, which was something that I
+                  He had crossed almost all projects in the last years, but as a data provider, not as an architect who has to recover them.
+                  </p>
+                </div>
+                <div class="main" id="adobe">
+                  <h2>...And this is done inside</h2>
+                  <p> And it seems that I liked the taste, after the internal reorganization in my company, I was now in the marketing area,
+                  And the tools used here were adobe (also SAP but those did not touch me) specifically Adobe Campaing, definition of Journeys
+                  advertising, action on the prospect, to impact him on the chosen target, communications shipping (mail or SMS or push ...) and measurement
+                  of the impact, with a control group to see the effectiveness of the campaign.Before, during and then, I also had the opportunity to do
+                  Small studies of Alfresco, Open Marketing Open UPENS (such as Listmonk) and also updated with Lifey (who already knew him from
+                  another project), I also put a little in tune with React.Come on, that a world of technologies, new and not so new.
+                  </p>
+                </div>
+                <div class="main-hidden" id="unsung-hero">
+                  <h2>...English interview</h2>
+                  <p> and another curious thing that happened in this period, was that my conversation course ends in English, about 40 hours, but they were not enough,
+                  To pass the cut with a German client, who needed people who knew Go (finally a project with Go) but my English level was not
+                  enough to accept me, the fact is that I did the interview and everything, and they liked my curriculum, but my level (for the day to day) does not
+                  It seemed enough to them, if they caught another who did not know anything, but at least German spoke.
+                  </p>
+                </div>
+                <div class="main-hidden" id="futuro">
+                  <h2>...Learning Hindi</h2>
+                  <p>That experience led me to redouble my efforts to get "fluency" in my English, I opened some new fronts and intensify others,
+                  And apart from starting to learn a third programming language (Python) I told myself, because I don't learn a third language, and I was about
+                  To get to learn German, but I told myself ... Better the Hindi, which are more, and are very good in informatics.And there you have me, learning,
+                  Poquito A Poquito, Hindi, we'll see where this path takes me.
+                  </p>
+                </div>
+                
+                <div class="main" >
+                  <a href="topic5.html">We follow?</a>
+                </div>
+
+              </section> <!-- end page -->
+
+         </div> <!-- end main -->
+
+     </div> <!-- end row -->
+
+ </div> <!-- end content-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
