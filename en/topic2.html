@@ -1,0 +1,208 @@
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reflection on the past</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main-kiss.css">
+
+    <script src="../js/modernizr.js"></script>
+    <script defer src="../js/fontawesome/all.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body id="top">
+  
+    <script>
+      if(localStorage.currentVisibility == "none"){
+          document.body.style.setProperty("--visibility", "none")
+      } else if (localStorage.currentVisibility == "block"){
+          document.body.style.setProperty("--visibility", "block")
+      }
+  </script>
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Content
+    ================================================== -->
+    <div class="s-content">
+
+        <div class="row">
+          
+            <div id="sidebar" class="s-content__sidebar large-2 column">
+
+              <div class="widget widget--categories">
+                <h3 class="h6">Categories.</h3> 
+                <ul>
+                  <li class="menuitem-hidden"><a href="#chiringuito">No idea...</a></li>
+                  <li class="menuitem"><a href="#vicky">Blockchain...</a></li>
+                  <li class="menuitem-hidden"><a href="#ibm">How projects are won...</a></li>
+                  <li class="menuitem"><a href="#mm">We changed...</a></li>
+                  <li class="menuitem-hidden"><a href="#soledad">Ikigai...</a></li>
+                  </ul>
+              </div>
+        
+            </div> <!-- end sidebar -->
+
+
+            <div id="main" class="s-content__main large-10 column">
+
+                <section class="page-content">
+
+
+                  <div class="main-hidden" id="chiringuito">
+                    <h2> ... how a team is managed, with other teams and a large customer.
+
+                    <p> The next project was a full -fledged experience.They put me in the Blockchain group, I started with Quorum, to learn about
+                    Everything that was possible to do ... and learning from those who already knew how it was going ... and after three weeks, it turns out that a project comes out for
+                    Telefonica with Hyperledger Fabric, and I enter to make a piece in Java, which will be in charge of reading some CSV and launching some Rest requests,
+                    and for this I had to use Spring Batch. </p>
+
+                    <p> So I started as a listener in the project, and as the weeks went by trying to absorb all the knowledge that flowed to me
+                    Around, you know, although your piece is isolated, it never is to know how the other pieces are going.And so, unintentionally I found myself in
+                    The end of the first sprint with the project almost to start, and with almost nothing to show the client, which was the great telephone.
+
+                    <p> This was the typical project where the entire artillery was landed, but lacking a little organization in one of the parties,
+                    And that era in which I was, remained to mount the GO pipeline, and mainly for the management of dependencies (which also did not go
+                    to have internet exit).Come on, the typical thing that in my place does it work with the IDE, but in the environment I have no idea how to do it. </p>                    
+
+                    <p>And that is along with a anger out of place ... the truth is that there are many ways to inspire others, and how they tell in
+                    <a href="https://www.linkedin.com/pulse/geo-mas-all%25C3%25A1-del-l%25C3%25ADmite-10-lecciones-de-liderazgo-y/?trackingId=maA8R%2BZJ0FtDPDEzAeuf9g%3D%3D">this</a>
+                    article, the person in charge did not have any of those skills, especially that of "Lead by Example", and that anger was a clear example
+                    How not to teach with the example.</p>
+                    
+                    <p> From that moment, things also changed, for various reasons that responsible was increasingly disappearing from the
+                    Scene ... until at the couple of months it disappeared completely, and there I found me alone, of "Second on board."I have to put on the
+                    batteries in golang, which turned out to give the chance of being the second language of which I wanted to become "expert (if there is that)",
+                    And although today I have to stop to think if the definition of the type goes before or after the name ... I stop to think that it is
+                    On the contrary of Java because the guy is not as important as in Java: D, but as Go has a very small instruction game, the truth
+                    is that with little you could do a lot ... and the second thing with what I put up was with Hyperledger Fabric, starting with how they were iterated
+                    the elements of the network to searches ... and to discover that then they could be launched to the couchdb, for which you would have to
+                    Have indices ... and organized types ... I'll tell you later. </p>
+                  </div>
+  
+                  <div class="main" id="vicky">
+                    <h2>...Women's name</h2>
+
+                    <p> Blockchain solutions were a bit of a fallen layer, but here all the meat was put on the grill.As they said, it could
+                    having solved the problem in any other way, but with Blockchain it was better (facing the public) and so it could be "finance".
+                    And in addition, a great honor was given a code, any project that boards must have it: D </p>
+
+                    <p> I started with a piece in Java, but soon I had to take responsibility for the parts on GO and those of Fabric too.
+                    I have to give a little meaning to the microservice-hell that had been mounted to the first change, unifying the log system, then
+                    The traceability with Jaeger.And in between, we went from traveling the network (which the first month of development only had thousands of sku, routers
+                    For example, but that when that figure would increase it would not be feasible, so we went to the queries on the smart-contract, queries against
+                    Couchdb).I would have to review the notes, that I have them ... I think I already comment, but I write it every day what I do, as a way of
+                    Being able to consult it later if I need it, and but I remember the next great milestone was the performance, in some initial benchmark,
+                    Where the SMC only recorded 1 value (or perhaps not even that) was left with which he endured 100 tx/sec and of course, it was not the same to have to call
+                    One SMC to another, to see if the TX was allowed not to do so, so we put a cache to accelerate calls between smart-contract
+                    keeping decoupling.And later, we had to implement operations in Batch, because network time also counts, no
+                    It is the same as (although transparently) the SDK calls 20 times with 1 element to the peer, which does so with 20 elements.And the
+                    Last before that ... it was to divide the large blocks .. let's say 10,000 skus skus, into smaller blocks to parallel the processing
+                    In Batch and get answered before 10 minutes, Batch operations in real time. </p> 
+
+                    <p> and in these, all those people from the beginning were only the "technologies" of industry 4.0 that were impatient because the solution
+                    that brought the money, the same was not the most optimal for a client who did not want to be drawn, and towards everything that was in his hand
+                    To knock down the solution. </p>
+
+                    <p> But finally, we end up going to production, a real production, although there were still parallel systems that support
+                    The real operation, this turned out only to be a parallel system with blockchain. </p>
+
+                    <p> and from there, because they continued to face challenges, the supply chain continued to increase, and more and more cases came in
+                    and some type of material (not serialized) that had not been considered at the beginning, which forces to use the imagination in modeling
+                    of the entities in the blockchain to support elements that did not have key, only an amount, and that also wanted to show the historical
+                    of amounts movements.That takes us to an overflow that had to redesign on the march.Between half, remember as quickly,
+                    Some memory read in some microservice, and some other things.But we also managed to get out of that. </p>
+
+                    <p> and in the meantime, those responsible in Telefónica were rotating, and taught him that this was going ... and one of the last pieces that
+                    It was to be assembled was the business rules engine, which in principle was going to be with Drools, but seen that they were not going to be many,
+                    And that they were not going to model them, we chose to mount a drug on Go, and the truth is that it went quite well. </p> 
+
+                    <p> and the next, the next was the Covid, which forces us to return to our homes, but as we were already a well -greased group, that was not
+                    A problem, and we continue to draw releases, which already required fewer changes in the Core, and more in the reporting part. </p>
+
+                    <p> On the other hand, a new actor appeared, who was going to assemble the piece that was going to support a part of the flow that
+                    To this day there was no technicians and the withdrawal of Hub materials and the installation at the client's house.And these too
+                    I have to teach them, and when they ended, because we stayed with the maintenance and evolution of that part as well. </p>
+
+                    <p> and the last official release was for stores, to facilitate the pre-assignment work of collection materials,
+                    And although this was the one that was most balanced at all levels, even with acceptance test and everything, I end up being the
+                    Less used, but hey, I face the others. </p>
+
+                    <p> and every relay, we were improving processes, managing errors, making tools to improve the day by day, we don't
+                    We bored, and although Blockchain less and less, we had to tune the postgresql to get the most out, we set up a
+                    generic reporting system that has nothing to envy to a crystallreports or similar. </p>
+                  </div>
+  
+                  <div class="main-hidden" id="ibm">
+                    <h2>...pulling prices and trying to hire</h2>
+
+                    <p> and well, almost 3 years later, it seems that money was over and how the thing marched like silk (seen from outside)
+                    The client received a maintenance offer that was very economical, and fell into the trap ... or fell into the offer, without more. </p>
+
+                    <p> and for our part, we made the most complete information transferred, we did, we made about 60 sessions minimum,
+                    that gave a total of almost 80 hours of videos counting every detail of the project, I even made a map of all the details
+                    technicians of each of the pieces, and well, because time passed and had to ask for a year of one month, to continue
+                    Giving support, because the 3 fellows seem to be done with reins.
+
+                    <p> But as I said before, and I do not say it now: "You have to worry about what you can control, and that is, the best
+                    of oneself at every moment, and what is not under your control, because nothing ... "</p>
+                  </div>
+  
+                  <div class="main" id="mm">
+                    <h2>...like the one that changes chromos.</h2>
+
+                    <p> and suddenly one day, when it was already clear that another stayed with maintenance (not so clear the exact moment of the relay)
+                    They tell me that by January I enter another client.Things here go like this, you have to bill, and today you are here and tomorrow there.The only
+                    What happened is that I had been in the same place for 3 years, making the wheel turn, and what if I turned. </p>
+
+                    <p> But hey, take the opportunity to take note of the new requirements of the new project, and put me up to date.</p>
+                  </div>
+  
+                  <div class="main-hidden" id="soledad">
+                    <h2>...loneliness and search for the future.</h2>
+
+<p> and I suppose that, perhaps for spending 2 years working from home (how comfortable he hears) but, that contact is missed,
+And perhaps more than those 2 years, the 4 that I had outside my parent group, which although in Accenture we are Oneaccenture, but hey,
+Many of the comrades of the beginnings undertook on their way to other places, and "today there is almost no one from those of before" </p>
+
+<p> But hey, I had to make this reflection.And here I leave her written in case you get to her. </p> </p>
+                  </div>
+  
+                  <div class="main" >
+                    <a href="topic3.html">We follow?</a>
+                  </div>
+                  
+
+                </section> <!-- end page -->
+
+           </div> <!-- end main -->
+
+       </div> <!-- end row -->
+
+   </div> <!-- end content-wrap -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

@@ -20,6 +20,14 @@
 </head>
 
 <body id="top">
+  <script type="text/javascript">
+    window.onload = (function () {
+      if (window.navigator.languages[0]!='es') {
+        var elem = document.getElementById("lang_selector");
+        elem.className = "align-right main";
+      }
+    });
+  </script>
   <script>
       if(localStorage.currentVisibility == "none"){
           document.body.style.setProperty("--visibility", "none")
@@ -41,6 +49,12 @@
     <!-- Content
     ================================================== -->
     <div class="s-content">
+
+
+        <div class="row">
+          <h3 id="lang_selector" class="align-right main-hidden"><a href="en/topic1.html">ENGLISH</a></h3>
+        </div>
+
 
         <div class="row">
           
@@ -73,7 +87,6 @@
         
             </div> <!-- end sidebar -->
 
-
             <div id="main" class="s-content__main large-10 column">
 
                 <section class="page-content">
@@ -86,8 +99,8 @@
                     quizás por eso cada vez que íbamos a su casa, me quedaba sorprendido con aquellos aparatos... tendría unos 6 años (1984) y en 
                     su casa había un Commodore 64 (y también un montón de circuitos, chips, resistencias y mas cosas que yo no conocía y me parecían 
                     misteriosas). De hecho, uno de los recuerdos mas arraigados que tengo, es el de dibujar un coche tele-dirigido, con todo tipo 
-                    de gadget (que finalmente no construimos pero bueno, eso no quita que)... años después (con 12, en 1990) soldé mi primer circuito
-                    un amplificador, que metí en la caja de un toner.</p>
+                    de gadget (que finalmente no construimos, pero bueno, eso no quita que)... años después (con 12, en 1990) soldé mi primer circuito:
+                    un amplificador, que metí en la caja de carton donde vendian un toner.</p>
 
                     <p>Pero, dejemos de lado la electrónica (algo con lo que siempre he tonteado, y no domino) y volvamos a la informática.
                     Recuerdo que cuando un amigo mio empezó a trastear con los sprites de su MSX, yo tenia un Commodore 16 (que para mi desgracia
@@ -96,9 +109,10 @@
 
                     <p>Cada vez que iba a casa de mi tio, recuerdo las cintas del Commodore, y mas tarde los discos de 5 1/4. Recuerdo un verano, en el que me
                     dedique a renderizar unas fuentes, para un programa que estaba haciendo... no eran TrueType, pero dibujé las siluetas (creo que solo en mayúsculas),
-                    de todo el alfabeto, y los números también.</p>
+                    de todo el alfabeto, y los números también. Hoy dia hay otras herramientas para eso, curiosamente tengo pensado que mi hija use su letra para
+                    generar unas fuentes TrueType que usare en un cuento infantil, pero eso, es otra historia.</p>
 
-                    <p>Mas adelante, recuerdo historias... pero bueno, los recuerdos siempre estarán conmigo, y aquellas enseñanzas, también.
+                    <p>Mas adelante, me vienen al recuerdo otras peripecias... pero bueno, los recuerdos siempre estarán conmigo, y aquellas enseñanzas, también.
                     Y no solo las enseñanzas de que solo con tres campos era suficiente para indexar una tabla en dBaseIII, sino que, siempre dieras lo
                     mejor de ti, pero sin pisar a los demás.</p>
 
@@ -137,7 +151,7 @@
 
                     <p>Y supongo que algo de eso paso, el primer año fue en blanco, en los 4 siguientes saque todas las asignaturas menos tres... 
                     asi que el ultimo año, fue un paseo, me dio tiempo a aprender a patinar (benditos créditos de libre configuración) a jugar al 
-                    Hockey Linea, a echarme novia y a descubrir el mundo ante mi... Habíamos entrado en el nuevo milenio</p>
+                    Hockey Linea, a echarme novia y a descubrir el mundo ante mi... Habíamos entrado en el nuevo milenio.</p>
                   </div>
                 
                   <div class="main-hidden" id="primer_trabajo">
@@ -145,7 +159,7 @@
 
                     <p>Ese ultimo año (o quizás el anterior, ya no recuerdo) me dio tiempo para hacer varias cosas, entre ellas, un amigo me consiguió
                     un puesto de encargado de sistemas en un departamento de bioquímica, donde se dedicaban a realizar cálculos para construir nuevas macro-moléculas
-                    para uso científico... (fíjate, esas cosas ya se hacían 20 años y sin IA) y allí tenia buena conexión para usar el Audiogalaxy,
+                    para uso científico... (fíjate, esas cosas ya se hacían hace 20 años y sin IA) y allí tenia buena conexión para usar el Audiogalaxy,
                     aprendí a editar la pagina web del departamento, conexiones via ftp para subir documentos. Allí estuve tres meses, hasta que el departamento 
                     agoto el presupuesto y yo aprendí lo básico.</p>
                     
@@ -346,9 +360,9 @@
                     <p>Siempre lo recordaré, por el significado de las fechas... 8 de Enero de 2013, el año en que nació mi segunda hija, el dia que mi padre,
                     habría cumplido años, sino hubiera muerto el verano anterior.</p>
                     
-                    <p>Y que se cocía en el 2013, Globalia quería rehacer la web de Halcón viajes tenia y decidió hacerlo con Tecnológica, que por aquel entonces 
+                    <p>Y que se cocía en el 2013, Globalia quería rehacer la web de Halcón viajes que tenia y decidió hacerlo con Tecnilógica, que por aquel entonces 
                     era una pequeña empresa de no mas de 30 empleados. Por lo visto, Autentia había montado una prueba de concepto: un gestor de contenidos a 
-                    medida con Jackrabbit de base y spring (el boot aun no había salido, eso si... con pocos xmls), y un frontal (del back) con Ember... 
+                    medida con Jackrabbit de gestor de contenidos y spring (el boot aun no había salido, eso si... con pocos xmls), y un frontal (del back) con Ember... 
                     ah, y para renderizar en el front (en el back) Thymeleaf. En fin, eso es lo que se llevaba de moda por entonces.</p>
                     
                     <p>Fue cuestión de montar un grupo, que llego hasta las 10 personas en algún momento, y que los primeros 6 meses estuvo desplazado en las
@@ -375,16 +389,18 @@
                     
                     <p>Y la verdad es que no fue un estrés (mas allá de lo normal de un proyecto grande, o por lo menos con cliente grande) pero la salud
                     me iba a pasar factura, dos niñas pequeñas, cierto estrés familiar, haber dejado de lado el ejercicio diario, en fin, que mi espalda me dio
-                    un aviso (febrero 2015), tuve una protrusion en una vertebra lumbar que me dejo fuera de juego durante casi 2 meses, pero bueno, me sirvió para darme cuenta
-                    que hay que cuidarse: empezar a sentarse bien, hidratarme, dar un paseos después de comer y por supuesto: PILATES... empece con clases de 
-                    maquina, casi personalizadas durante 6 meses hasta que deje de ser un tronco para empezar a poder flexionarme... y asi hasta hoy dia, donde
-                    sigo dando clases de suelo una vez por semana, y cada mañana hago una rutina de 25 minutos que incluye estiramientos, dorsales y mantener los
-                    isquiotibiales bien flexibles, y bueno, comer un poco mas sano, nada de refrescos y habré adelgazado unos 12 kg desde entonces (2014-2022) 
-                    y ya hasta consigo salir a correr unos 5km en 30 minutos... en fin, nada del otro mundo, pero mente sana en cuerpo sano.</p>
+                    un aviso (febrero 2015), tuve una protrusion en una vertebra lumbar que me dejo fuera de juego durante casi 2 meses, pero bueno, me sirvió 
+                    para darme cuenta que hay que cuidarse: empezar a sentarse bien, hidratarme, dar un paseos después de comer y por supuesto: PILATES... 
+                    empece con clases de maquina, casi personalizadas durante 6 meses hasta que deje de ser un tronco para empezar a poder flexionarme... 
+                    y asi hasta hoy dia, donde sigo dando clases de suelo una vez por semana, y cada mañana hago una rutina de 25 minutos que incluye 
+                    estiramientos, dorsales y mantener los isquiotibiales bien flexibles, y bueno, comer un poco mas sano, nada de refrescos y habré 
+                    adelgazado unos 12 kg desde entonces (2014-2022) y ya hasta consigo salir a correr unos 5km en 30 minutos... en fin, nada del otro 
+                    mundo, pero mente sana en cuerpo sano.</p>
                   
                     <p>A mi vuelta, Tecnológica seguía creciendo, y bueno, a mi me toco LeroyMerlin, que por aquel entonces no tenia una version responsive,
                     y optaron para no perder trafico, montar algo rápido que mostrara la web (catalogo) con modo responsive. Con poco: Spring Boot 1.3, 
-                    Thymeleaf, ajax, Dozer, RestTemplate conseguí montar mucho (en el back) el front lo llevo otra persona. Pero en 2 o 3 meses, lo teníamos andando.</p>  
+                    Thymeleaf, ajax, Dozer, RestTemplate conseguí montar mucho (en el back) el front lo llevo otra persona. Pero en 2 o 3 meses, lo 
+                    teníamos andando.</p>  
                   </div>
                 
                   <div class="main" id="transicion">
@@ -397,12 +413,12 @@
                     Pero bueno, yo aprendí baste de Liferay, y me gusto.</p>
                     
                     <p>Y para cerrar el año Leasplango, mismo esquema, equipo de diseño y experiencia de usuario, y en este caso el frontal lo hacíamos nosotros.
-                    Había dado con HippoCMS (antes de que lo comprara Bloomreach) y... pues era algo parecido a lo que en su momento montamos para AirEuropa, y molaba, 
-                    asi que lo cogimos para gestionar los contenidos, y aprovechar su facilidad de integración con otros frameworks, en este caso spring, y asi poder 
-                    servir contenidos de otros orígenes de datos (no solo los contenidos del portal) como los listados de productos y sus precios. Toda una ingeniería 
-                    de componentes, que me toco meter en WebSphere, y resulto que la interfaz de modificación de contenidos inline, puede verlo 
-                    <a href="https://community.bloomreach.com/t/channel-manager-works-but-disable-after-a-variable-time/414">aquí</a>... daba algun problema, pero bueno, 
-                    las cosas empezaban a ir rápido.</p>
+                    Había dado con HippoCMS (antes de que lo comprara Bloomreach) y... pues era algo parecido a lo que en su momento montamos para AirEuropa, 
+                    y molaba, asi que lo cogimos para gestionar los contenidos, y aprovechar su facilidad de integración con otros frameworks, en este caso spring,
+                    y asi poder servir contenidos de otros orígenes de datos (no solo los contenidos del portal) como los listados de productos y sus precios. 
+                    Toda una ingeniería de componentes, que me toco meter en WebSphere, y resulto que la interfaz de modificación de contenidos inline, puede 
+                    verlo <a href="https://community.bloomreach.com/t/channel-manager-works-but-disable-after-a-variable-time/414">aquí</a>... daba algun problema,
+                    pero bueno, las cosas empezaban a ir rápido.</p>
                   </div>
                 
                   <div class="main" id="la_venta">
@@ -450,7 +466,7 @@
                     <h2>...de las que se puede disfrutar</h2>
 
                     <p>Y bueno, no todo es dar con gente toxica, también se da a veces con compañeros con los que se conecta, y da gusto currar, 
-                     y por esos momentos, se da gracias también. Aunque bueno, los caminos no siempre siguen paralelos .</p>
+                     y por esos momentos, se da gracias también. Aunque bueno, los caminos no siempre siguen paralelos.</p>
                   </div>
                 
                   <div class="main" id="accenture_tente">
