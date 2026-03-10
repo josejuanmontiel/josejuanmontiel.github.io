@@ -42,7 +42,6 @@
     <!-- Content
     ================================================== -->
     <div class="s-content">
-  
         <div class="row">
           
             <div id="sidebar" class="s-content__sidebar large-2 column">
@@ -50,14 +49,10 @@
               <div class="widget widget--categories">
                 <h3 class="h6">Categories.</h3> 
                 <ul>
-                  <li class="menuitem"><a href="#my-way">¿Recorriste...</a></li>
-                  <li class="menuitem-hidden"><a href="#bien">Si estas leyendo esto...</a></li>
-                  <li class="menuitem-hidden"><a href="#situaciones">Situaciones...</a></li>
-                  <li class="menuitem-hidden"><a href="#tipos">Tipos...</a></li>
-                  <li class="menuitem-hidden"><a href="#aporto">Que puedo...</a></li>
-                  <li class="menuitem-hidden"><a href="#lenguajes">Que lenguajes...</a></li>
-                  <li class="menuitem-hidden"><a href="#formandome">Que metas...</a></li>
-                  <li class="menuitem-hidden"><a href="#ideal">Mi ideal...</a></li>
+                  <li class="menuitem"><a href="#power-shell">Siempre hay tiempo...</a></li>
+                  <li class="menuitem-hidden"><a href="#technology">La cancion...</a></li>
+                  <li class="menuitem"><a href="#buzzgear">Aviones...</a></li>
+                  <li class="menuitem-hidden"><a href="#ml-ia">Generando...</a></li>
                 </ul>
               </div>
         
@@ -66,207 +61,116 @@
   
             <div id="main" class="s-content__main large-10 column">
   
-                <section class="page-content">
-          <div class="main" id="my-way">
-            <h2>...mi camino?</h2>
+              <section class="page-content">
+                <div class="main" id="power-shell">
+                  <h2>...para aprender cosas antiguas.</h2>
+                  <p>El caso es que tras la reorganizacion, parece que no llegaba el proyecto adecuado para mi. Asi que tras la formacion en 
+                    big data, y la fase de mailing, resulto que surgio una oportunidad en un proyecto de un gestor documental ... (confieso que
+                    he tenido que buscar el nombre porque ya no me acordaba) ... Projectwise, de Bentley. Asi que me meti de lleno, llegue al 
+                    4 dia del KT, menos mal que grabaron los 3 anteriores. Y os preguntareis, ¿y sabias de ese gestor documental?
+                    Pues eral la primera vez que lo escuchaba (y oye, hay otras con los que no he trabajado pero me sonaban) pero de este ... 
+                    na de na :D
+                  </p>
+                  <p>Menos mal, que visto uno vistos todos, y este tenia un API que se podia atacar desde PowerbShell, asi que porque no, 
+                    a aprender un nuevo lenguaje de scripting, y a atacar el API con el. Y oye, que no es tan complicado, y que me ha servido 
+                    para entender mejor el funcionamiento del gestor documental, y para automatizar tareas que antes hacia a mano. 
+                    Asi que al final, todo ha salido bien, y he aprendido algo nuevo, aunque no sea lo que esperaba (esto lo ha compledo copilot :D)
+                  </p>
+                  <p>El caso es que era la tipica situacion donde habia que tirar de alguien tomara las riendas rapido, de algo que iban a dejar 
+                    de mantener otro equipo, y era el tipico producto que nadie sabia, asi que ... porque no iba a poder aprenderlo yo? 
+                    Y bueno, fueron pasando las semanas, fue organizandose el equipo con mas gente, dieron con alguien en Portugal que ya estaba
+                    dentro del cliente en otras areas, y que podria llevar un equipo a mas largo plazo, y finalmente pude ir desconectandome.</p>
+                  <p>Aunque se dieron situaciones curiosas, esto del mantenimiento tenia su gracia. Pero bueno, pude salir de aquello que no era 
+                    para hacer carrera.
+                  </p>
+                  </div>
+                <div class="main-hidden" id="technology">
+                  <h2>...llego a su fin.</h2>
+                  <p>El siguiente proyecto, ahora os contare fue uno donde, lo primero, casi, que me preguntaron fue si me interesaba cambiar 
+                    de division en Accenture, de Song a Technology, yo de primeras dije que me daba igual, y empece a currar, pero luego,
+                    resulto que mi mentora se fue de la compañia, y me dijo que si tenia oportunidad de cambiar de division, que lo hiciera, 
+                    que en Technology habia mas oportunidades de crecimiento, asi que ... porque no? 
+                    Llevo unos meses, pero olle, tampoco tenia prisa, asi que al final, pude cambiar.
+                  </p>
+                </div>
+                <div class="main" id="buzzgear">
+                  <h2>...a fuego lento.</h2>
+                  <p>Estabamos en 2024, octubre. Y el proyecto era con spring boot 2.7, java 11, liquibase y oracle, frontales con Angular 11,
+                    un poco antiguo, pero ni tan mal. El caso es que venia de usar tecnologias de mas de 20 años, y por usar algo de solo 10,
+                  tampoco me iba a a quejar ahora.</p>
+                  <p>El caso es que una de las primeras cosas de las que se quejaban era el tipico acoplamiento entre front y back, que si
+                    front tenia que esperar a que terminara el back. Cosas que realmente eran habituales, 20 años atras, pero afortunadamente
+                    las cosas han evolucionado, y en uno de los ultimo proyectos usaban Openapi, para justo eso, asi que lo propuese, ¿porque no?
+                    Si hay una manera de empezar a desarrollar de manera paralela front y back, tras haber acordado una iterfaz, porque no aprovecharlo.</p>
+                  <p>Pero la friccion al cambio, se dejo notar en distinto nivel del proyecto. A mi siempre me gustaron las soluciones opensource, 
+                    porque siempre ha habido alguien antes que tu que ha tenido que solucionar, y la mayor parte de las veces (por distintos motivos),
+                    suelen compartir con el mundo el resultado de esa investigacion. El caso es que monte un docker compose (ese invento del diablo),
+                    que levantaba varias cosas, entre ellas un Prims, un servidor mock bastante interesante, Killgrave. Pero resulto que la "excusa" de
+                    la seguridad vino a impedir el uso de esas herramientas, de manera mas amplia. Luego curiosamente meses despues lo empezarian a 
+                    usar en otros proyectos. Y ya nadie se acordaria, pero bueno.</p>
+                  <p>Otro tema que vino despues, fue el "Metadata", aqui la cuestion era... intentar mejorar la automatizacion de tareas tediosas...
+                    Empezamos con la parte de definicion funcional, a partir de ahi buscamos la automatizacion de la parte tediosa, y luego, la 
+                    integracion con el ciclo de desarrollo, para que se actualizara automaticamente, y se pudiera usar en el dia a dia, pero bueno, 
+                    eso es otra historia... que se queda en mi bagaje de cosas aprendidas.
+                  </p>
+                  <p>Y bueno, los meses pasaban y las cosas se fueron estabilizando, los viajes iban y venian, la metodologia safe es lo que tiene,
+                    que cada 10 semanas toca sincronizar y evaluar. Y bueno, todo es mejorable pero el dialogo era fluido, y en alguna de esas 
+                    sicronizaciones, fui empezando a intuir que el ritmo era mas lento de lo que me imaginaba, y que el cambio era mas lento de 
+                    lo que me gustaria. Y eso se reflejaba en las propias personas implicadas, y asi como los proyectos se modelaban, tambien lo 
+                    hacian las personas implicadas, y si querias fluir, tu tambien debias hacerlo, aunque siempre habia algun meandro donde probar suerte.
+                  </p>
+                  <p>...alguna cosas mas podria mencionarse, pero solo destacare la llegada de Gemini, la verdad es que solo lo teniamos a nivel de chat,
+                    sin integracion con ningun IDE, pero aun asi se le podia sacar bastante partido, una cosa curiosa que salio de ahi fue un diff de 
+                    liquibase, que se hacia a partir de un diagrama hecho en drawio, y que se convertia en un liquibase, y oye, que no era tan mal...
+                  </p>
+                </div>
+               <div class="main-hidden" id="ml-ia">
+                  <h2>...codigo y mucho mas.</h2>
+                  <p>Y aunque ya llevamos casi tres años inmersos en una ola de IA generativa, esto cada dia cambia a una velocidad increible.
+                    Y ya en otoño del 2025 decidi que era momento de subirme al carro definitivamente y sin excusas. Mi objetivo era ir a la
+                    linea de flotacion de la IA, no queria quedarme en la superficie como simple usuario, y, de primeras no queria convertirme
+                    en un investigador de ML, pero si queria aprender las bases, para ir al escalon intermedio, el del metal, el codigo,
+                    las tripas que no se ven, y si podia ser con Golang, mejor que mejor, ya os he contado que era mi segundo lenguaje.</p>
+                  <p>Asi que aproveche y monte un servidor local con un presupuesto ajustado (y con suerte, fue justo antes de la crisis de 
+                    la RAM, propiciada justo por la voracidad de la IA) y bueno el presupuesto dio para un intel i5 core ulta 2º generacion, 
+                    500GB SSD PCIe Gen 4 NVMe, solo 16GB de RAM DDR5 y una grafica dedicada de 12GB intel arc B560M. Con esto podia empezar
+                    a trastear si tener que tirar de nada externo.</p>
+                  <p>Lo primero que prove en ese servidor, fue montar un KVM y descargar una imagen de HomeAssitance, proveen imagenes para usar 
+                    directamente, y bajo ese ecosistema monte la conexion con un LLM, y luego bajo sus agentes, whisper y Piper (curiosamente usando
+                    un protocolo especial para HA)... aqui jugue con varios system prompts, incluso uno para ayudar en los deberes a mis hijas.</p>
+                  <p>En esos primero intentos, creo que aun no habia comprado la GPU, asi que tiraba de NPU, o incluso solo de CPU. Empezaba a ver 
+                    el ecosistema Intel y OpenVINO, entender como funcionaba la quantizacion de modelos, y como model server sacaba el maximo partido
+                    al hardware de intel, y oye iba mas o menos fluido. Tambien hice alguna prueba con Ollama, y hasta me aventure con alguna PR.</p>
+                  <p>El caso es que antes de empezar con todo esto, lo que habia brujuleado era LocalAI, y todo el ecosistema que se habia montado
+                    alrededor para RAG, incluso un dia que hablando con unos familiares sobre un video, me dio por buscar una herramienta que me 
+                    hiciera el resumen del video de youtube, y ahi estaban, eso me llevo a intentar montar algo parecido (y no lo he llegado a conseguir
+                    100% todavia, pero bueno, le dare otro intento mas adelante). Una vez tenia funcionando el LLM termine abandonando LocalAI porque
+                    soporte en Intel no era muy bueno (por lo menos en mi caso) y termine de ajustar model server. Tambien hice pruebas con open webui,
+                    que la verdad es un sistema bastante completo, incluso con RAG.</p>
+                  <p>And well, it wasn't just about chat rooms anymore; it was starting to integrate with IDEs, and that's where things really started 
+                    to gain momentum. Just like anyone could make (attractive) drawings, anyone could now program. Years of apprenticeship were no longer 
+                    necessary; it was readily available, and it continues to evolve every day. Of course, it does come at a price.</p>
+                  <p>Y tras haber visto ya hace años el curso de NYU del 2020 sobre ML, decidi tomarmelo en serio y aprovechar mi ecosistema para ayudarme
+                    en el aprendizaje, y me monte un Junyper Notebooks, para python y tambien go (aunque no he dado aun con los imports de librerias externas)
+                    Y me puse manos a la obra a prender las bases (y ahora mismo estoy en ello, mientras escribo estas lineas). Tambien queria profundizar sobre
+                    las opciones de Golang en el ecosistema, aunque no era el nativo para ML si que parece que habia cosas interesantes, me he puesto a tope
+                    con Hugot...</p>
+                  <p>Y aqui en este punto es donde volvi a mis lecturas, las que ya teniea, Kahneman, Foer, Feldman y los nuevos por venir...
+                    Clear, Ericsson... incluso otros sobro como escribir ayuda, y porque no puedo llegar a dibujar bien. Hace unos meses consegui finalizar 
+                    un proyecto personal que habia tenido abierto mucho tiempo, la publicacion de un cuento infantil.</p>
+                  <p>Y ya por ultimo vuelta a las charlas, asincronas en este caso (no lo invente yo) pero retomando grupos que habia intentado montar
+                    hace tiempo, porque no meter en ellos a un agente, con capacidad de vision, si le hechas un vistazo a mi linkedin veras de que te hablo.
+                  </p>
+                </div>                
 
-            <p>Si has llegado aquí, es que has recorrido PARTE del camino, porque ¿termina aquí?</p>
-            
-            <p>Encontraste (o te hicieron llegar) las entradas del blog, donde cuento en 4 PASOS, un proceso de reflexión personal...
-            que va evolucionando a lo largo del tiempo.
-            <ul>
-              <li>Reflexión sobre el camino profesional (y personal) recorrido estos 20 años de profesión.</li>
-              <li>Reflexión sobre lo que ahora (últimos años incluidos) he sido.</li>
-              <li>Reflexión sobre lo que quiero ser, que puedo aportar, como veo la industria...</li>
-            </ul>
-            Pero, te vuelvo a preguntar ¿RECORRISTE TODO EL CAMINO? A veces un paso atrás, hace que podamos ver el bosque, sin que los 
-            arboles lo tapen, a veces, un paso atrás nos permite buscar el camino oculto, dar con la tecla que no esperábamos.</p>
-          </div>
+                <div class="main" >
+                  <a href="topic5.html">Seguimos?</a>
+                </div>
 
-          <div class="main-hidden" id="bien">
-            <h2>...es que diste con mi camino.</h2>
+              </section> <!-- end page -->
 
-            <p>Y TU diste con el camino, y bueno, ahora y siempre, no solo hay una manera de llegar. Has podido conseguirlo de varias formas,
-            porque nada de lo que aquí cuento esta oculto, solo se hace de rogar, para aquellos que se tomen la molestia de indagar.</p>
-            
-            <p>Porque en el fondo, esto va de esfuerzo, compromiso, perseverancia... de dejarse querer por quien te valore.</p>
-            
-            <p>Recuerdo que hace tiempo (ahora no consigo encontrar la referencia) vi que Google, buscaba trabajadores,
-            a traves de una vaya publicitaria "criptica" que quien fuera capaz de descifrarla podia iniciar el proceso... una manera de 
-            encontrar solo a los mejores (descifrando vayas publicitarias)... pues esto es algo parecido, pero desde otro punto de vista.</p>
-            
-            <p>En el fondo, tampoco es que sea nada nuevo, pero mientras hacia la reflexión, y la dejaba escrita, me he divertido experimentando,
-            y ocultando parte del camino, que TU has descubierto, TU te has tomado el tiempo para descubrir lo que pienso. No tengo a mano
-            ninguna de <a href="https://hackaday.com/tag/business-card/">estas</a> pero este ejercicio digital es lo mas parecido que se me
-            ocurrió, con varios objetivos en mente... los que describí en el primer post.</p>
-          </div>
-
-          <div class="main-hidden" id="situaciones">
-            <h2>...que se dieron en mis empleos.</h2>
-
-            <p>Cuando hablo de situaciones, vengo pensando en personas, y como las personas influyen en las situaciones.</p>
-
-            <p>Empiezo por los tipos de personas mas problemáticas, aquellas que yo considero toxicas, las que retuercen las situaciones para llegar a 
-            donde ellas quieren, que no es al éxito del proyecto, sino al fracaso, ¿con que objetivo? Por placer, por el "te lo dije"... los motivos
-            pueden ser varios, pero el caso es que o tienes cuidado o el barco naufraga. Estas personas trabajan a un rendimiento inferior del que 
-            podrían, solo con el objetivo de hundir el proyecto. Estate preparado por siempre puedes encontrártelos, por tanto lo mejor que puedes hacer
-            es desarrollar las skill necesarias para poder lidiar con ellos, y tras reflexionar mucho, una manera podría ser
-            darles rienda, hacer que se comprometan y dejen de lado las excusas. Posiblemente se opongan al orden que le han establecido, porque 
-            piensen de otra forma (que normalmente se guardan para ellos) asi que, una vez identificados, se les debe desenmascarar con educación,
-            ser capaz de contrarrestar sus excusas, y darles cancha, entonces seguro que cambiaran de aires y la cosa rodara, a menos que su nivel
-            profesional no de la talla ante el problema, o se topen con clientes (o responsables de mas alto nivel) que vean en ellos un estorbo.
-            De cualquier manera, es algo que no es nada fácil de gestionar, y estar mas de 6 meses en su radio de acción, puede quemar al mas calmado.</p>
-            
-            <p>El siguiente tipo de personas, son aquellos que lo intentan, con buena fe, pero su nivel es el que es, y cuando el problema te supera, o te pones
-            las pilas, o te ponen de patitas en la calle. Es muy difícil saber si alguien tiene un nivel, y no puede pasar de el (soy de la opinion que
-            con esfuerzo siempre se puede mejorar, y no solo en "tu tiempo libre"). Y como las anteriores, estas personas existen y siempre existirán,
-            y si te cruzas con ellas, se les debe intentar ayudar a que se formen, darles las tareas a su nivel, intentar que te aporten, y porque
-            no, intentar aportarles tu. Dependiendo de las exigencias del proyecto, se podrán hacer unas cosas u otras, pero bueno, supongo que se
-            pueden tolerar un par de años, a partir de ahi, hay de darles un aviso, porque desgraciadamente, en este mundo de la informática, uno no
-            se puede estancar, y no ser capaz de evolucionar, puede ser un síntoma.</p>
-            
-            <p>Otro tipo de personas, siempre desde el respeto, y sin presuponer maldad, son aquellas que se piensan que saben mas de lo que saben,
-            con estos, en principio no hay mayor inconveniente, terminan cayendo por su propio peso, asi que solo basta esperar, y claro, que no 
-            te caigan encima, por tanto al igual que los anteriores, hay que intentar compartir tu punto de vista con ellos a ver si se consigue
-            el equilibrio de opiniones.</p>
-            
-            <p>Otro tipo, que me viene al recuerdo, es aquel superior con ganas, con ganas de hacer un buen trabajo con el equipo del que dispone,
-            pero ese equipo no es el adecuado para el trabajo y con lo que se tiene, se tiene que hacer lo mejor posible, y eso le lleva a dar el 200% 
-            de su parte, porque sino, no se llega al objetivo.</p>
-            
-            <p>Los cracks, son aquellos que saben, y saben un montón... lo bueno de este mundo de la informática, es que es muy, muy amplio, y como 
-            en casi todos los trabajos... <a href="https://www.goodreads.com/book/show/4103.My_Job_Went_to_India">hay que ser experto en algo, y saber
-            un poco de todo</a> y si eres veterano, pues puedes ser experto en varias cosa... no hay problema.
-            Pues hay veces que te cruzas con cracks, personas con un conocimiento increíble y que por lo general, son de trato agradable. Un buen lugar,
-            para conocer (por lo menos de vista) a esa gente, eran las conferencias, y luego los grupos locales. Si tienes la suerte de
-            tener a tu lado en el trabajo, a uno de estos crack, aprovéchalo y aprende de el todo lo que puedas. Se como uno de los tipos, que hemos
-            comentado antes, y si tu nivel no da para mas, evoluciona con el ejemplo de los que saben mas que tu. Porque no tenemos que parar de evolucionar,
-            nuestro mundo no para de moverse y nosotros debemos hacerlo con el.</p>
-            
-            <p>Y por ultimo, la gente joven con ganas de aprender y comerse el mundo. Si ademas das, con aquellos que son respetuosos, y no se creen
-            mas que los demás, resulta tremendamente reconfortante ver como crecen con el tiempo, y pasado unos años se les puede dejar andar solos.
-            Y que recompensa mayor, que formar a aquellos que puedan ayudar y aportar valor, y a su vez formar a otros con menos experiencia que ellos.
-            Supongo que lo mas importante es hacer crecer a los demás, para poder crecer tu, no encuentro otra forma de que esto fluya. Si quieres
-            <a href="https://www.youtube.com/watch?v=EOG04Ot75jQ">olvida que es un baterísta</a> y piensa que es un programador.</p>
-            
-            <p>¿y de cual soy yo? pues espero que me lo digas, pero haciendo un poco de critica: supongo que no doy mi brazo a torcer, vamos que no
-            me dejo convencer fácilmente de una solución... y por lo menos, espero compartir todo lo que aprendo, para que los demás también lo sepan.
-            </p>
-          </div>
-
-          <div class="main-hidden" id="tipos">
-            <h2>...de empleos que conozco.</h2>
-
-            <p>La factoría... es la primera empresa donde trabaje, el trabajo viene mas o menos organizado, y hay poco que pensar, poco margen de 
-            error y de maniobra, pero bueno, ahora con perspectiva no todo tiene que ser arquitecturar y usar cosas molonas, puede ser simplemente
-            hacer lo bien, rápido y sin errores, a la primera y con calidad... y no solo me refiero a los test. En mi caso, aquí di mis primero pasos.</p>
-            
-            <p>La consultora... con aires modernos... son otro tipo de empresas, que al igual que todas, ofrecen solucionar las necesidades de los clientes,
-            pero aportando un plus de personalización, con equipos de personas con cierto nivel, y que en general son capaces, tanto de implementar la
-            solución como de arquitecturar, y no solo técnicamente sino también a otros niveles. Por este tipo también pase, en ella cubren todo el 
-            rango de necesidades del cliente, y se supone que no eres un mero recurso... pero bueno, como en todo hay siempre matices.</p>
-            
-            <p>La consultora... pequeña... adquisición de talento... seria un caso, en la que por volumen no puede acceder a la infraestructura necesaria,
-            para poder capturar la atención de clientes, y se dedican a adquirir talento que sub-contratan a las grandes consultoras que si tienen acceso
-            a clientes. A veces, estas consultoras si que acceden a proyectos mas pequeños directamente.</p>
-            
-            <p>La empresa de producto... pequeño... con clientes grandes, o pequeños. Puede ser una variedad de la consultora, donde en vez de intentar
-            acaparar talento que poder sub-contratar, intenta tener los medios para acaparar también clientes/proyectos, y asi tener un control mas
-            completo del resultado.</p>
-            
-            <p>La empresa de producto, con aires de consultoría... con clientes grandes... Una variación de la anterior, puede ser aquella, donde 
-            ademas la infraestructura para captar clientes, se tiene parte de esa infraestructura para evolucionar un producto propio al cual sacarle
-            beneficio, te conviertes en tu propio cliente. Una variación de estas, es aquellas donde tu único cliente eres tu, y tu producto... y los
-            clientes de ese producto.</p>
-            
-            <p>La empresa comprada, por una grande... "Se decía a comprar empresas y venderlas por partes", una frase de una famosa película. Pues al final,
-            en este mundo, cuando se destaca (por algo bueno o malo) puede aparecer el pez grande que se coma al pequeño, de manera amistosa o no, de
-            todo habrá, y el resultado inevitable es que las sinergias que se generan en la compra... antes o después, por necesidad o por honor, 
-            terminan haciendo que parte de la gente desaparezca, y con menos se haga lo mismo o mas.</p>
-            
-            <p>La multinacional... con sub-empresas... bueno, aquí creo que se termina mezclando un poco de todo lo visto antes. Que una empresa tenga 
-            500mil empleados, no significa, obviamente, que todos se dediquen a lo mismo, que todos se conozcan, al final las estructuras tienen que ser
-            manejables, y sobre todo con un objetivo común, cliente o grupo de... la venta, teórica, que permite al empleado cambiar de trabajo, dentro
-            de la misma empresa, con lo bueno y malo, que eso conlleva: "la confianza da asco" pero bueno, siempre esta bien conocer esto también.</p>
-            
-            <p>Y las que no conozco... la start-up, las de productos usados por cientos de miles de personas, las que se dedican al soporte 
-            (de producto, de personas...) las que se dedican a esto de la informática, pero también a otros negocios.</p>
-            
-            <p>¿cual me gustaría encontrar?... pues a estas alturas de mi vida, supongo que busco estabilidad en empresas grandes, donde pueda aportar
-            a distintos niveles, y donde pueda aprender de los que saben mas que yo, y enseñar a los que saben menos. Donde tenga opcion de crecer, y
-            donde pueda aportar valor.</p>
-            </p>
-          </div>
-
-          <div class="main-hidden" id="aporto">
-            <h2>...aportar.</h2>
-            
-            <p>Empatizar con las necesidades del cliente... al final, hay que tener claro que se trabaja para conseguir un objetivo que beneficie
-            al cliente que paga las facturas, y después de todos los años que llevo trabajando, creo que soy capaz de entender las necesidades
-            de cada cliente y aportar en la dirección adecuada en cada caso. No es lo mismo un proyecto donde participan 100 personas, que otro 
-            donde con un solo squad de 4 personas, basta para conseguir el objetivo. No es lo mismo un proyecto para conseguir una solución temporal
-            de compromiso, a otro donde se espera que la solución perdure varios años (aunque en este mundo nunca se sabe). Ademas, sino hay otro rol
-            que se encargue de ello, puedo dialogar directamente con el cliente para realizar el seguimiento.</p>
-            
-            <p>Motivar técnicamente... por otro lado, se encontrar la motivación, hasta en los proyectos legacy, como en los mas innovadores. Si
-            trabajamos para conseguir el objetivo de un cliente, nosotros lo realizamos a cambio de un salario, y mas allá de la respetable necesidad
-            de dinero, soy capaz de motivar a las personas para crecer (y  de determinar aquellas que no quieren crecer, para buscarles el mejor
-            acomodo posible, aunque este a la larga no es bueno para nadie). Pero aquellos que quieren crecer, se les motiva fácilmente cuando las cosas
-            marchan, y también se puede hacer cuando las cosas marchan peor. Pero como digo, de todo se puede aprender, de lo bueno y de lo malo.</p>
-            
-            <p>Conseguir la <a href="https://es.wikipedia.org/wiki/Sylar#Habilidades">aptitud intuitiva</a>... creo que es la mejor manera de actuar,
-            en este mundo totalmente técnico, donde a veces, una tecnológica se oculta sobre capas y capas de otras cosas. Pero al final, si eres
-            capaz de ver en el interior de las cosas y preguntarte siempre como funcionan, entonces, seras capaz de resolver cualquier problema.
-            Y esa es la manera de pensar que intento enseñar, al que quiere escuchar, y con ella poder abordar cualquier cosa que se ponga por delante.</p>
-            
-            <p>Aprender de lo bueno y de lo malo... como ya he dicho, es la mejor manera de siempre aprender, porque no siempre veras que las cosas
-            se hagan bajo tus criterios, asi que, en esas ocasiones lo mejor es aprende a como NO hacer las cosas.</p>
-            
-            <p>No pensar (solo) en el salario... y porque no solo de dinero se puede vivir, de aprender cosas nuevas (que no por ello modernas) o
-            de ver como resuelven los problemas los clientes, de como se gestionan las situaciones difíciles, y porque no de echar alguna risa con
-            los compañeros, de entender la situación de cada uno... todo eso afecta al rendimiento.</p>
-          </div>
-
-          <div class="main-hidden" id="lenguajes">
-            <h2>...son nativos para mi.</h2>
-            
-            <p>Y al final, entre otras cosas, lo mas importante en este mundo de la informática, son los lenguajes de programación que permiten
-            la resolución de los problemas. Y cuando yo empece Java era lo que estaba de moda, y con eso empece y estuve mas de 17 años, recorriendo
-            todos los frameworks, stacks y tipos de servidores... y cuando Java 9, empezaba a coger ritmo... salte a Golang, y con ese lenguaje he
-            he estado los ultimos 3 años. Y la verdad es que me gusta, y me gusta mucho, y aunque no me molesta seguir codificando en Java, me gustan
-            mas hacerlo en Go por su simplicidad.</p>
-            
-            <p>Por otro lado, si consideramos otro tipo de lenguajes, tambien domino (a otro nivel) el: HTML, CSS, JS, SQL...</p>
-          </div>
-
-          <div class="main-hidden" id="formandome">
-            <h2>...tengo en mente ahora</h2>
-            
-            <p>Aunque creo que tengo un nivel de ingles aceptable, para un trabajador tecnológico en España, uno de mis objetivos es validar
-            que puedo llegar mas allá... un mínimo de B2 y algún dia no muy lejano un C1. Mi nivel de lectura y listening técnico es bueno,
-            pero mi speaking, por falta de practica, todavía es mejorable.</p>
-            
-            <p>Por otro lado, aunque tengo conocimientos de Cloud, y un nivel de usuario normal, si dispongo de tiempo me gustaría poder 
-            certificarme, empezando por GCP.</p>
-          </div>
-
-          <div class="main-hidden" id="ideal">
-            <h2>...donde se une todo.</h2>
-            
-            <p>Como reflexión final, supongo que la gente siempre va ha estar ahi, la buena, la mala y la peor. Toca saber tratar con cada uno,
-            y lo mas difícil, no llevarse el problema fuera del trabajo. Por otro lado, los clientes que se gastan dinero, lo hacen a cambio de
-            un resultado, y ese es el objetivo de tu trabajo, conseguir el resultado de la manera mas optima. Por tanto, puedes llegar a ser un
-            experto capaz de conseguir el resultado mas optimo (rápido, adecuado, ...) pero si te comparas con los demás, solo podrás llegar a 
-            ser X veces mas optimo, y ese valor no puede ser muy alto, y ademas varia según otras condiciones externas. Y durante el tiempo que
-            dura el desarrollo del objetivo, poder hacer el bien a tu alrededor (tanto al código, como a las personas). Y luego, poder ampliar 
-            ese objetivo a la empresa en donde trabajas, si es bueno para los demás, lo sera para ti. Conclusion, "flow", me adapto... pero 
-            considera como soy.</p>
-          </div>
-
-        </section> <!-- end page -->
-      </div> <!-- end main -->
-    </div> <!-- end row -->
-
+          </div> <!-- end main -->
+      </div> <!-- end row -->
 </div> <!-- end content-wrap -->
 
 <!-- Java Script
