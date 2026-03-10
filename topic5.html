@@ -51,7 +51,7 @@
                 <ul>
                   <li class="menuitem"><a href="#power-shell">Siempre hay tiempo...</a></li>
                   <li class="menuitem-hidden"><a href="#technology">La cancion...</a></li>
-                  <li class="menuitem"><a href="#airbus">Aviones...</a></li>
+                  <li class="menuitem"><a href="#buzzgear">Aviones...</a></li>
                   <li class="menuitem-hidden"><a href="#ml-ia">Generando...</a></li>
                 </ul>
               </div>
@@ -93,7 +93,7 @@
                     Llevo unos meses, pero olle, tampoco tenia prisa, asi que al final, pude cambiar.
                   </p>
                 </div>
-                <div class="main" id="airbus">
+                <div class="main" id="buzzgear">
                   <h2>...a fuego lento.</h2>
                   <p>Estabamos en 2024, octubre. Y el proyecto era con spring boot 2.7, java 11, liquibase y oracle, frontales con Angular 11,
                     un poco antiguo, pero ni tan mal. El caso es que venia de usar tecnologias de mas de 20 años, y por usar algo de solo 10,
@@ -135,13 +135,32 @@
                     la RAM, propiciada justo por la voracidad de la IA) y bueno el presupuesto dio para un intel i5 core ulta 2º generacion, 
                     500GB SSD PCIe Gen 4 NVMe, solo 16GB de RAM DDR5 y una grafica dedicada de 12GB intel arc B560M. Con esto podia empezar
                     a trastear si tener que tirar de nada externo.</p>
-                  <p>Empiezo con HA...</p>
-                  <p>Intel y OpenVINO... quantizacion de modelos... modelserver...</p>
-                  <p>Ollama...RAG...</p>
-                  <p>Gemini... antigravity...y vibe coding...</p>
-                  <p>NYU... Hugot...</p>
-                  <p>Python Notebooks... Razonamiento... kaneman y foer....</p>
-                  <p>Qwen VL Likekit...</p>
+                  <p>Lo primero que prove en ese servidor, fue montar un KVM y descargar una imagen de HomeAssitance, proveen imagenes para usar 
+                    directamente, y bajo ese ecosistema monte la conexion con un LLM, y luego bajo sus agentes, whisper y Piper (curiosamente usando
+                    un protocolo especial para HA)... aqui jugue con varios system prompts, incluso uno para ayudar en los deberes a mis hijas.</p>
+                  <p>En esos primero intentos, creo que aun no habia comprado la GPU, asi que tiraba de NPU, o incluso solo de CPU. Empezaba a ver 
+                    el ecosistema Intel y OpenVINO, entender como funcionaba la quantizacion de modelos, y como model server sacaba el maximo partido
+                    al hardware de intel, y oye iba mas o menos fluido. Tambien hice alguna prueba con Ollama, y hasta me aventure con alguna PR.</p>
+                  <p>El caso es que antes de empezar con todo esto, lo que habia brujuleado era LocalAI, y todo el ecosistema que se habia montado
+                    alrededor para RAG, incluso un dia que hablando con unos familiares sobre un video, me dio por buscar una herramienta que me 
+                    hiciera el resumen del video de youtube, y ahi estaban, eso me llevo a intentar montar algo parecido (y no lo he llegado a conseguir
+                    100% todavia, pero bueno, le dare otro intento mas adelante). Una vez tenia funcionando el LLM termine abandonando LocalAI porque
+                    soporte en Intel no era muy bueno (por lo menos en mi caso) y termine de ajustar model server. Tambien hice pruebas con open webui,
+                    que la verdad es un sistema bastante completo, incluso con RAG.</p>
+                  <p>And well, it wasn't just about chat rooms anymore; it was starting to integrate with IDEs, and that's where things really started 
+                    to gain momentum. Just like anyone could make (attractive) drawings, anyone could now program. Years of apprenticeship were no longer 
+                    necessary; it was readily available, and it continues to evolve every day. Of course, it does come at a price.</p>
+                  <p>Y tras haber visto ya hace años el curso de NYU del 2020 sobre ML, decidi tomarmelo en serio y aprovechar mi ecosistema para ayudarme
+                    en el aprendizaje, y me monte un Junyper Notebooks, para python y tambien go (aunque no he dado aun con los imports de librerias externas)
+                    Y me puse manos a la obra a prender las bases (y ahora mismo estoy en ello, mientras escribo estas lineas). Tambien queria profundizar sobre
+                    las opciones de Golang en el ecosistema, aunque no era el nativo para ML si que parece que habia cosas interesantes, me he puesto a tope
+                    con Hugot...</p>
+                  <p>Y aqui en este punto es donde volvi a mis lecturas, las que ya teniea, Kahneman, Foer, Feldman y los nuevos por venir...
+                    Clear, Ericsson... incluso otros sobro como escribir ayuda, y porque no puedo llegar a dibujar bien. Hace unos meses consegui finalizar 
+                    un proyecto personal que habia tenido abierto mucho tiempo, la publicacion de un cuento infantil.</p>
+                  <p>Y ya por ultimo vuelta a las charlas, asincronas en este caso (no lo invente yo) pero retomando grupos que habia intentado montar
+                    hace tiempo, porque no meter en ellos a un agente, con capacidad de vision, si le hechas un vistazo a mi linkedin veras de que te hablo.
+                  </p>
                 </div>                
 
                 <div class="main" >
